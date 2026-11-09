@@ -25,7 +25,7 @@ Gợi ý vai trò (một người có thể giữ nhiều vai): điều phối t
 
 | Checkpoint | Người chính | Người hỗ trợ | Sản phẩm |
 |---|---|---|---|
-| CP3 — Hội tụ nhóm | Lê Sỹ Long Nhật | Cả nhóm — cần xác nhận | Cluster, cây OST, bảng chấm điểm |
+| CP3 — Nhóm trưởng | Lê Sỹ Long Nhật | Cả nhóm — cần xác nhận | Cluster, cây OST, bảng chấm điểm |
 | CP4 — Kiểm chứng | Ngô Duy Khánh | Cả nhóm — cần xác nhận | Assumption map, bộ câu hỏi, snapshot và tình huống tham khảo; chưa có phỏng vấn/survey thật |
 | CP4 — Research | Ngô Duy Khánh | Chưa xác nhận | Bảng research 3 giải pháp có link nguồn chính thức, khoảng trống và bài học |
 | CP5 — Quy trình trước/sau | Nguyễn Mạnh Hùng | Cả nhóm - cần xác nhận | Quy trình + bảng before/after |
@@ -69,7 +69,7 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 
 **Phần việc phụ trách:**
 
-- Phụ trách chính CP3 — Hội tụ nhóm.
+- Phụ trách chính CP3 — Nhóm trưởng.
 - Pitch candidate kiểm tra đủ file và yêu cầu trong repository trước khi nộp bài lab GitHub.
 - Gom candidate thành cluster, xây dựng OST và đề xuất shortlist.
 
