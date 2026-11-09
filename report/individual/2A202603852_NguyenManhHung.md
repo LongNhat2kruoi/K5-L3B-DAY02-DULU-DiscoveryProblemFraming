@@ -171,21 +171,35 @@ HIỆN TẠI — 30–40 phút/lần
 Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ cho các câu 6.1–6.6 (không tính 6.7, câu này được chấm riêng ở tiêu chí C5). **Không dùng AI để viết thay.**
 
 **6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
+Sau khi nghe top 3 problems của các bạn trong nhóm, mình thấy có một vài problem vẫn còn hơi mơ hồ, vĩ mô như phân loại hàng trăm feedback, tổng hợp báo cáo toàn công ty nhưng lại thiếu đi actor cụ thể hoặc là bottleneck không thể xác định được cụ thể chính xác là bao nhiêu. Ngoài ra vẫn có các problem rất hay và đầy đủ cụ thể
 
 **6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
+Có một problem bị solution first khi mà bạn đó nói rằng tạo ra con AI Agent tự đọc file rồi tự sửa file, tự commit lên github. Do đó nhóm đã kịp thời bàn lại và chỉ ra rằng nó quá nhiều rủi ro và thống nhất rằng AI chỉ nên tìm ra lỗi và không được tự sửa lỗi sửa code
 
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
+Có. Ban đầu, tôi khẳng định rằng bottleneck của quá trình review bài là "30 phút" cho toàn bộ các khâu. Nhưng khi trình bày, một bạn trong nhóm vặn lại: "30 phút đó là thời gian bạn tự dò, hay là bao gồm cả thời gian bạn nhắn tin bắt các thành viên khác vào sửa rồi ngồi chờ?". Tôi nhận ra mình đã đo sai. Sau phản biện đó, tôi đổi ý và chẻ nhỏ quy trình ra, xác định lại bottleneck thực sự chỉ là khâu "đọc nội dung bài làm và đối chiếu chéo với Rubric" chiếm khoảng 15 phút
 
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
-
+Tôi khá bất ngờ ở bước research các công cụ có sẵn (CP4). Ban đầu nhóm định dùng AI để giải quyết toàn bộ quy trình, nhưng khi research, tôi phát hiện ra các công cụ như Markdownlint hay Lychee đã có thể tự động bắt lỗi định dạng và tìm link chết rất nhanh bằng Rule/Script thông thường. Điều này làm tôi nhận ra không phải bài toán nào cũng cần nhét một con AI nặng nề vào.
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
+Khó nhất là viết phần "Success Metric" và giữ cho mô tả không dính dáng đến "Giải pháp"
 
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
+Nếu làm lại, tôi sẽ dành thêm thời gian thực hiện phỏng vấn 2-3 bạn ở các nhóm khác ngay tại CP4 thay vì chỉ dựa vào trải nghiệm tự báo cáo của bản thân. Tôi cũng sẽ phản biện nhóm mạnh hơn ở phần Boundary, yêu cầu định nghĩa rõ ràng xem nếu report của AI dài quá (cảnh báo những lỗi vụn vặt)
 
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
+Vấn đề (Problem) của nhóm là người review bài lab GitHub mất quá nhiều thời gian đối chiếu chéo giữa bài làm thực tế và các yêu cầu trong Rubric, dễ dẫn đến mệt mỏi và bỏ sót lỗi. Quy trình (Process) hiện tại tốn khoảng 30 phút, với điểm nghẽn (bottleneck) 15 phút nằm ở khâu đọc và map nội dung với tiêu chí chấm điểm. Để giải quyết, nhóm đặt mục tiêu (Metric) giảm tổng thời gian rà soát xuống dưới 15 phút và 0 lỗi cấu trúc. Chúng tôi đặt ra ranh giới (Boundary) nghiêm ngặt là AI chỉ được quét và báo lỗi, tuyệt đối không tự sửa file hay tự commit, con người bắt buộc phải kiểm tra lại (HITL). Vì vậy, mức can thiệp AI được chọn là Workflow (kết hợp Script kiểm tra link và AI so sánh Rubric)
 
 ---
 
 ## 7. Tài liệu tham khảo
+**Tài liệu môn học:**
+1. Hướng dẫn chi tiết từng checkpoint: `docs/01-worksheet.md`
+2. Báo cáo mẫu: `docs/02-deliverable-example.md`
+3. Tổng hợp Framework quốc tế: `docs/03-international-frameworks.md`
 
+**Các nguồn Research giải pháp hiện có (CP4):**
+11. GitHub Docs — *About tasklists*: https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/about-tasklists 
+12. Markdownlint (Ruby) Repository: https://github.com/markdownlint/markdownlint
+13. Lychee (Fast link checker) Repository: https://github.com/lycheeverse/lychee
 -
