@@ -97,3 +97,39 @@ HIỆN TẠI — 80-90 phút
 | **#1: Phân loại form** | AI có thể không hiểu các thuật ngữ chuyên ngành hoặc slang (từ lóng) của sinh viên trong form, dẫn đến tag sai. | Đồng ý | Bổ sung phương án kiểm duyệt vào quy trình tương lai (boundary): AI chỉ gán tag nháp, con người bắt buộc duyệt qua bảng tag. |
 | **#2: Đóng gói bài viết** | Bài content do AI sinh ra thường có văn phong khuôn mẫu, đọc giống robot, làm giảm tương tác tự nhiên. | Đồng ý một phần | Chấp nhận AI chỉ viết "nháp", đổi mục tiêu từ "AI tự đăng" sang "AI sinh draft 3 kênh, người viết thổi hồn và gửi duyệt". |
 | **#3: Seeding group** | Đề xuất dùng "Agent AI tự động đăng bài lên group" là rất khó khả thi (Feasibility) vì Facebook có cơ chế block bot và thay đổi giao diện liên tục. | Đồng ý hoàn toàn | Ghi rõ giới hạn: Chỉ dùng AI để tự sinh 15 phiên bản text (biến thể) sẵn trong Google Docs. Việc đi copy-paste và bấm đăng vẫn do con người làm. |
+
+
+report/individual/MSSV_HoTen.md
+
+## 4. Tôi đã tham gia phần nào (CP7)
+
+| Hoạt động | Tôi đã làm gì? | Kết quả / Bằng chứng |
+|---|---|---|
+| Pitch Problem Card | Pitch 3 thẻ bài liên quan đến Truyền thông sự kiện (Seeding group, Đóng gói đa kênh, Phân loại form đăng ký). | Thẻ bài "Phân loại form đăng ký" lọt vào top 3 candidate cuối cùng của nhóm. |
+| Gom nhóm (Cluster) & Chấm điểm | Cùng nhóm phân tích 12 candidate để gom thành 3 cụm chính; tham gia chấm điểm và rút gọn shortlist. | Bảng Cluster và bảng chấm điểm trong `group_report.md` (mục 2.2 và 2.4). |
+| Quy trình nhóm (CP5) | Trực tiếp hỗ trợ vẽ sơ đồ luồng công việc hiện tại và tương lai cho bài toán "Rà soát repository trước khi nộp bài". | Sơ đồ quy trình Before/After trong `group_report.md` (mục 4.1 và 4.2). |
+| Viết Problem Statement v0/v1 (CP5, CP6) | Phụ trách viết Success Metric (đo thời gian và điểm format) và thiết lập Boundary (chặn rủi ro AI làm hộ bài). | Mục 5 và Mục 7 trong `group_report.md`. |
+| Nhận phản biện | Bị chất vấn: "Tốn 30 phút review đã đủ đau để làm tool chưa, hay chỉ do nhóm làm việc lề mề?" | Nhận ra cần tách rõ thời gian dò lỗi nội dung (bottleneck thật) với thời gian chờ đợi thành viên khác nộp bài. |
+
+---
+
+## 5. Dùng AI (CP7)
+
+| Checkpoint | Dùng AI để làm gì? | AI giúp ích ở đâu? | Sai/hời hợt ở đâu? | Tôi đã sửa gì? |
+|---|---|---|---|---|
+| CP1 (Scan) | Gợi ý thêm các bài toán theo góc độ của ban Truyền thông. | Nhắc nhở thêm về vấn đề thống kê số liệu tương tác sau chiến dịch. | Gợi ý "Dùng AI tự viết content đăng bài". Đây là một solution, không phải problem, và không có dấu hiệu đo lường. | Bỏ qua ý tưởng này, tự viết lại các bài toán theo đúng chuẩn Job Story không nhắc đến công cụ. |
+| CP2 (Thẻ bài) | Đóng vai PM hoài nghi để phản biện 3 thẻ bài nháp. | Chỉ ra rủi ro feasibility khi muốn AI tự động seeding group Facebook. | Gợi ý dùng AI để phân loại form nhưng không nhắc đến rủi ro ngôn ngữ GenZ/Slang. | Bổ sung thêm Boundary: AI chỉ gán tag nháp, có mục "Khác" để con người duyệt lại từ ngữ lạ. |
+| CP5, CP6 (Quyết định) | Phản biện Problem Statement v0 của bài rà soát repository. | Giúp nhận ra rằng thời gian không phải thước đo duy nhất, cần đo cả chất lượng rà soát. | Đề xuất giao quyền cho AI (Automate) tự sửa luôn Markdownlint cho nhanh. | Bác bỏ vì vi phạm quy định học thuật. Viết lại Boundary yêu cầu con người duyệt từng lỗi (Augment). |
+
+---
+
+## 6. Reflection cá nhân (CP7)
+
+### 6.1. Bài toán ban đầu của tôi đã tiến hóa thế nào sau khi trao đổi nhóm?
+Ban đầu, tôi rất tâm đắc với các thẻ bài mảng truyền thông sự kiện (đặc biệt là phân loại form đăng ký). Tuy nhiên, khi ghép vào nhóm, chúng tôi nhận thấy bài toán "Rà soát repository trước deadline nộp lab" là nỗi đau chung trực tiếp và rõ ràng nhất mà cả 4 thành viên đều vừa trải qua. Tôi đã phải bỏ qua ý tưởng cá nhân để hội tụ cùng nhóm, chuyển trọng tâm từ "xử lý phản hồi khách hàng" sang "đối chiếu nội dung học thuật với Rubric".
+
+### 6.2. Tôi đã thay đổi quyết định gì sau khi nghe AI hoặc bạn học phản biện?
+Khi xây dựng quy trình tương lai cho bài rà soát repo (CP5), ban đầu tôi định để AI tự động sửa luôn các lỗi format nhỏ (như sửa heading, sửa link ảnh) để tiết kiệm thêm thời gian. Tuy nhiên, sau khi nghe phản biện về rủi ro liêm chính học thuật và nguy cơ AI "ảo giác" sửa sai nội dung báo cáo gốc, tôi đã quyết định đổi mức can thiệp thành Workflow nghiêm ngặt: AI chỉ đóng vai trò "kiểm toán viên" (sinh report lỗi), còn sinh viên phải tự tay sửa file. Điều này khiến target thời gian không giảm quá sâu (vẫn tốn khoảng 15 phút) nhưng đổi lại là sự an toàn tuyệt đối.
+
+### 6.3. Nếu làm lại, tôi sẽ thay đổi điều gì trong cách tiếp cận của mình?
+Nếu được làm lại bước CP4 (Kiểm chứng), tôi sẽ chủ động ra ngoài phỏng vấn ít nhất 3 nhóm khác ngay lập tức thay vì chỉ dựa vào dữ liệu tự báo cáo (self-report) nội bộ của nhóm. Việc chỉ phỏng vấn giả lập khiến chúng tôi thiếu đi những "tín hiệu phản bác" thực tế từ người dùng (ví dụ: có thể nhiều nhóm đã giải quyết xong bài toán này chỉ bằng việc dùng Github Projects rất hiệu quả mà không cần AI). Tôi nhận ra rằng bằng chứng về hành vi đã xảy ra mới là tiếng nói quyết định sống còn của một dự án.
