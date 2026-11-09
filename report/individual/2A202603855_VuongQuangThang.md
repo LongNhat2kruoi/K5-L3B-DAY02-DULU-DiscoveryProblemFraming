@@ -1,10 +1,13 @@
----
-noteId: "c4733fe0dc1411f1902c5fe9d0c5fe4e"
-tags: []
-
----
 
 # Báo cáo cá nhân
+
+## 1. Thông tin học viên
+
+- Họ tên: Vương Quang Thắng
+- MSSV: 2A202603855
+- Email trường (không bắt buộc, repo có thể để public):
+- Tên nhóm: DULU
+- Link repo nhóm: https://github.com/LongNhat2kruoi/L3B-DAY02-DULU-DiscoveryProblemFraming/tree/main
 
 ## 2. Scan problem (CP1)
 
