@@ -35,6 +35,16 @@ Gợi ý vai trò (một người có thể giữ nhiều vai): điều phối t
 
 ## Cá nhân
 
+### NgoDuyKhanh-2A202603870
+
+**Phần việc có dấu vết trong phiên làm việc:** Chuẩn bị CP4 với hỗ trợ của Codex; tổng hợp bản nháp tham khảo CP7 cá nhân.
+
+**Đóng góp cụ thể:** Yêu cầu triển khai CP4 từ candidate CP3, bổ sung các tình huống tham khảo và snapshot giả lập, yêu cầu commit/push lên nhánh `ngo-duy-khanh`. Nội dung do AI hỗ trợ soạn; chưa có phỏng vấn ngoài nhóm hoặc pilot công cụ.
+
+**Bằng chứng:** [Báo cáo nhóm mục 3](report/team/group_report.md), [báo cáo cá nhân mục 4–6](report/individual/2A202603870_NgoDuyKhanh.md), commit [6695378](https://github.com/LongNhat2kruoi/K5-L3B-DAY02-DULU-DiscoveryProblemFraming/commit/6695378).
+
+**Điểm rút ra trong bản tổng hợp tham khảo CP7 (Khánh cần tự xác nhận):** Phân biệt giả định, số liệu minh họa và bằng chứng thật; tách thời gian review khỏi thời gian chờ hoặc sửa bài; kiểm tra checklist/Rule trước khi đánh giá lợi ích bổ sung của Workflow. Reflection hiện có AI hỗ trợ, cần cá nhân tự viết lại trước khi nộp theo quy định môn học.
+
 Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `HoVaTen-MSSV`.
 
 ### HoVaTen-MSSV
