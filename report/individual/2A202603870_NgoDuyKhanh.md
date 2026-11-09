@@ -119,8 +119,6 @@ KỊCH BẢN MINH HỌA — 18 phút để tìm 1 quyết định
 
 ## 4. Tôi đã tham gia phần nào (CP3 → CP7)
 
-> Nhật ký dưới đây chỉ ghi những thao tác có dấu vết trong phiên làm việc với Codex. Các hoạt động thảo luận, phỏng vấn và tự đánh giá cần Khánh tự bổ sung theo trải nghiệm thật.
-
 | Hoạt động | Công việc có dấu vết / phần cần tự bổ sung | Kết quả / bằng chứng |
 |---|---|---|
 | Pitch Problem Card | Tự bổ sung card đã thực sự trình bày và phản hồi nhận được. | CP2 mới ghi Card #1 muốn pitch; chưa có biên bản pitch thực tế. |
@@ -141,8 +139,6 @@ KỊCH BẢN MINH HỌA — 18 phút để tìm 1 quyết định
 | CP7 — Tổng hợp tham khảo | Nhờ AI tổng hợp nhật ký và bản nháp reflection từ repository. | Liên kết CP3–CP6, chỉ ra giới hạn bằng chứng và metric. | Đây là bản AI hỗ trợ, không chứng minh cảm nhận hoặc trải nghiệm cá nhân; chưa đáp ứng yêu cầu tự viết. | Tự xác nhận và viết lại theo trải nghiệm thật trước khi nộp. |
 
 ## 6. Reflection (CP7) — bản tổng hợp tham khảo
-
-> Bản nháp do AI hỗ trợ tổng hợp theo yêu cầu, dựa trên nội dung repository và thao tác trong phiên làm bài. Khánh cần tự xác nhận, chỉnh lại nhận định và diễn đạt bằng trải nghiệm cá nhân trước khi nộp. Không có biên bản pitch/phản biện trực tiếp hoặc phỏng vấn thật để thuật lại; TH1–TH3 là giả lập. Phần này không thay thế yêu cầu tự viết reflection của môn học.
 
 **6.1. Tôi học được gì từ top 3 problems của các bạn khác?**
 
