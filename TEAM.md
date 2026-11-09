@@ -12,7 +12,7 @@
 
 | STT | Họ và tên | MSSV | Vai trò trong nhóm | Tài khoản GitHub |
 |---:|---|---|---|---|
-| 1 | Nguyễn Mạnh Hùng | 2A202603852 | Chưa xác nhận | Chưa xác nhận |
+| 1 | Nguyễn Mạnh Hùng | 2A202603852 | Phụ trách CP5 — Quy trình trước/sau + Problem Statement v0; báo cáo cá nhân CP1, CP2, CP7 | HungLunnn |
 | 2 | Vương Quang Thắng | 2A202603855 | Chưa xác nhận | Chưa xác nhận |
 | 3 | Ngô Duy Khánh | 2A202603870 | Phụ trách CP4 — chuẩn bị kiểm chứng và research; báo cáo cá nhân CP1, CP2, CP7 | dkhanhdev |
 | 4 | Lê Sỹ Long Nhật | 2A202603881 | Phụ trách chính CP3 — Hội tụ nhóm | LongNhat2kruoi |
@@ -28,8 +28,8 @@ Gợi ý vai trò (một người có thể giữ nhiều vai): điều phối t
 | CP3 — Hội tụ nhóm | Lê Sỹ Long Nhật | Cả nhóm — cần xác nhận | Cluster, cây OST, bảng chấm điểm |
 | CP4 — Kiểm chứng | Ngô Duy Khánh | Cả nhóm — cần xác nhận | Assumption map, bộ câu hỏi, snapshot và tình huống tham khảo; chưa có phỏng vấn/survey thật |
 | CP4 — Research | Ngô Duy Khánh | Chưa xác nhận | Bảng research 3 giải pháp có link nguồn chính thức, khoảng trống và bài học |
-| CP5 — Quy trình trước/sau | Chưa phân công | Chưa phân công | Quy trình + bảng before/after |
-| CP5 — Problem Statement v0 | Chưa phân công | Chưa phân công | Problem Statement v0 |
+| CP5 — Quy trình trước/sau | Nguyễn Mạnh Hùng | Cả nhóm - cần xác nhận | Quy trình + bảng before/after |
+| CP5 — Problem Statement v0 | Nguyễn Mạnh Hùng | Cả nhóm - cần xác nhận | Problem Statement v0 |
 | CP6 — Mức can thiệp + Problem Statement v1 | Chưa phân công | Chưa phân công | Ma trận, AI Canvas, eval, Problem Statement v1 |
 | CP6 — Quyết định | Chưa phân công | Chưa phân công | 4 rủi ro + Go/Not Yet/No-Go |
 
@@ -90,3 +90,30 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 
 - Cần chọn problem dựa trên actor, process, bottleneck và evidence trước khi chọn AI.
 - Candidate có solution hấp dẫn chưa chắc có evidence đủ mạnh hoặc phù hợp phạm vi lab.
+
+### NguyenManhHung-2A202603852
+
+**Phần việc phụ trách:**
+
+- Phụ trách chính CP5 — Quy trình trước/sau (Before/After Process) và Problem Statement v0.
+- Hoàn thiện CP7 — Reflection cá nhân.
+- Hỗ trợ thao tác kỹ thuật Git (commit, xử lý conflict/rebase và push file) lên repository chung của nhóm.
+
+**Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
+
+- Xây dựng sơ đồ quy trình hiện tại (5 bước, 30 phút) và bóc tách bottleneck thực sự nằm ở bước 3: "Đọc và đối chiếu nội dung với Rubric" (15 phút).
+- Thiết kế quy trình tương lai giúp giảm thời gian review xuống dưới 15 phút/bài, từ 5/5 bước thủ công xuống còn 3/5 bước.
+- Viết 6 trường của Problem Statement v0, đặc biệt xác định Success Metric rõ ràng và thiết lập Boundary chặt chẽ (AI chỉ xuất report cảnh báo, KHÔNG được tự sửa code hay push bài).
+- Đẩy thành công các cập nhật báo cáo của nhóm lên nhánh chính (xử lý lỗi rejected do lệch commit).
+
+**Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
+
+- `report/team/group_report.md`, mục 4 — Quy trình trước/sau (CP5).
+- `report/individual/2A202603852_NguyenManhHung.md`, mục CP1–CP7.
+- Chưa có file trong `report/assets/` cho CP5.
+
+**Điều mình học được từ phần nhóm:**
+
+- Nhận ra sự quan trọng của việc phải "chẻ nhỏ" quy trình thay vì gộp chung thời gian, nếu không sẽ rất dễ xác định sai điểm nghẽn (bottleneck).
+- Hiểu sâu hơn về vai trò của Boundary và HITL (Human-in-the-loop) để phòng ngừa rủi ro AI bịa lỗi (hallucinate) hoặc tự ý hành động ngoài tầm kiểm soát.
+- Nắm vững hơn luồng làm việc thực tế với Git khi làm việc nhóm (cách kéo code bằng pull/rebase để đồng bộ trước khi push).
