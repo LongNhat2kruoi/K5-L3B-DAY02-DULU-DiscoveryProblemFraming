@@ -118,6 +118,8 @@ Mở rubric → đọc từng mục → đánh dấu thiếu/sai → yêu cầu 
 - Vì sao: Đã có dấu hiệu ban đầu rõ nhất: mất khoảng 30 phút mỗi bài và lặp lại gần như mỗi assignment.
 - Câu hỏi muốn nhóm phản biện: Bottleneck thực sự nằm ở việc đọc nhiều tài liệu, kiểm tra cấu trúc file hay đối chiếu nội dung với rubric?
 
+**Candidate problem cá nhân đề xuất để nhóm cân nhắc:** Thành viên nhóm mất khoảng 30 phút trước mỗi assignment để đối chiếu README, rubric, submission guide và repository nhằm kiểm tra đủ file, đúng cấu trúc và đủ nội dung trước khi nộp. Phương án ưu tiên ban đầu là `No AI/Rule` với checklist và kiểm tra tự động đơn giản; chỉ cân nhắc `Workflow` nếu kiểm chứng cho thấy checklist không đủ giảm thời gian hoặc vẫn thường bỏ sót yêu cầu.
+
 ### AI đã phản biện card thế nào
 
 | Điểm yếu AI chỉ ra | Đồng ý? | Đã sửa gì |
@@ -125,6 +127,77 @@ Mở rubric → đọc từng mục → đánh dấu thiếu/sai → yêu cầu 
 | Chưa tách rõ bước nào trong việc kiểm tra repository mất nhiều thời gian nhất | Cần kiểm chứng | Bổ sung các bước riêng và ghi rõ cần bấm giờ từng bước |
 | Baseline 30 phút mới là tổng thời gian, chưa phải thời gian của bottleneck | Đồng ý | Giữ 30 phút là baseline ban đầu và đặt kế hoạch đo lại trong assignment tiếp theo |
 | Có thể nhảy sang AI trước khi thử checklist hoặc Rule | Đồng ý | Bổ sung checklist và script/link check là phương án không dùng AI |
+
+---
+
+## CP3 – Giả định
+
+Các nội dung dưới đây là giả định đề xuất, chưa phải sự thật đã được xác nhận. Chúng dựa trên candidate được chọn ở CP1–CP2: kiểm tra repository GitHub của nhóm có đủ file, đúng cấu trúc, đúng link và đủ nội dung trước khi nộp.
+
+| ID | Mô tả giả định | Lý do đưa ra giả định | Tác động đến dự án | Cách kiểm chứng |
+|---|---|---|---|---|
+| CP3-A1 | Bốn báo cáo cá nhân hiện có là nguồn candidate ban đầu cho buổi thảo luận nhóm, nhưng có thể chưa bao gồm mọi ý tưởng được nêu bằng lời. Các nhóm chủ đề hiện khá khác nhau: mua xe và kỹ thuật ô tô, truyền thông sự kiện, phối hợp báo cáo nhóm và kiểm tra repository. | `group_report.md` có 12 vị trí candidate, trong khi hiện repository mới có bốn báo cáo cá nhân với các domain khác nhau. | Shortlist có thể chưa đầy đủ hoặc khó hội tụ nếu một thành viên chưa nộp candidate hoặc nhóm chưa tìm được pattern chung. | Xác nhận danh sách thành viên trong `TEAM.md`, yêu cầu mỗi thành viên mang theo top 3 candidate khi pitch, sau đó cluster theo pain và quy trình thay vì chỉ theo domain. |
+| CP3-A2 | Nhóm sẽ so sánh candidate theo bảy tiêu chí của CP3: actor rõ ràng, quy trình rõ ràng, bằng chứng về pain, impact đo được, phạm vi vừa sức lab, khả năng so sánh các mức can thiệp và mức độ hiểu domain. | Worksheet và rubric của CP3 yêu cầu shortlist có lập luận thay vì bỏ phiếu ngay; bốn báo cáo hiện có cho thấy các candidate có mức độ cụ thể không đồng đều. | Candidate có ý tưởng tốt nhưng bằng chứng yếu có thể bị loại hoặc chuyển sang validation thay vì được chọn. | Ghi điểm số và lý do của từng candidate trong shortlist vào `group_report.md`, đồng thời ghi rõ candidate nào cần bổ sung evidence. |
+| CP3-A3 | Candidate được chọn phải mô tả problem của người dùng và quy trình hiện tại, không mô tả một công cụ đề xuất như chatbot, AI reviewer hoặc dashboard. | `RULES.md` và hướng dẫn OST không cho phép framing theo solution-first. | Nhóm có thể giữ problem statement mở cho `No AI`, `Rule`, `Workflow` hoặc `Agent` ở các checkpoint sau. | Rà soát cách diễn đạt candidate và loại bỏ các từ chỉ solution trước khi chốt shortlist CP3. |
+| CP3-A4 | Candidate cá nhân trong báo cáo này chỉ là đề xuất để nhóm cân nhắc, chưa phải bằng chứng nhóm đã chọn candidate đó. | Báo cáo cá nhân hiện chưa có biên bản pitch, điểm chấm hoặc quyết định đồng thuận của nhóm. | Không được chốt CP4–CP6 chỉ dựa trên đề xuất cá nhân này. | Ghi lại câu hỏi pitch, phản biện, điểm số và quyết định thật của nhóm trong CP3. |
+| CP3-A5 | Các báo cáo cá nhân hiện chủ yếu hoàn thành CP1–CP2; chưa có bằng chứng đầy đủ về phần đóng góp CP3–CP6 của từng thành viên. | Khi đọc bốn file, các phần CP3–CP6 vẫn để trống hoặc mới ở dạng template. | Không thể suy ra người phụ trách interview, research, process map hoặc decision chỉ từ các candidate cá nhân. | Nhóm cần ghi phân công và đóng góp thật trong `TEAM.md` và phần CP3–CP7 của từng báo cáo cá nhân. |
+
+## CP4 – Giả định
+
+| ID | Mô tả giả định | Lý do đưa ra giả định | Tác động đến dự án | Cách kiểm chứng |
+|---|---|---|---|---|
+| CP4-A1 | Nếu nhóm chọn candidate kiểm tra repository, một số người bên ngoài nhóm cũng gặp problem tương tự khi nộp assignment qua GitHub hoặc kiểm tra repository theo rubric. Nếu nhóm chọn domain khác, đối tượng kiểm chứng phải được thay đổi theo actor của candidate đó. | Bằng chứng hiện tại mới xác nhận trải nghiệm của từng tác giả, trong khi bốn báo cáo thuộc các domain khác nhau và CP4 yêu cầu kiểm tra hành vi với người thật phù hợp. | Phỏng vấn sai actor sẽ tạo evidence không liên quan và làm Value risk bị đánh giá sai. | Sau khi CP3 chốt candidate, chọn 2–3 người thật đúng actor/domain để hỏi về assignment hoặc quy trình gần nhất, các bước, thời gian và workaround. |
+| CP4-A2 | Người được phỏng vấn có thể mô tả một sự việc gần đây mà không bị hỏi dự đoán về việc họ có dùng solution đề xuất hay không. | `The Mom Test` yêu cầu hỏi về hành vi trong quá khứ, không hỏi ý kiến về ý tưởng. | Bằng chứng thu được có thể dùng để đánh giá Value và giảm rủi ro câu trả lời solution-first. | Dùng câu hỏi như “Hãy kể lần gần nhất bạn kiểm tra repository trước khi nộp bài” và ghi ít nhất một tín hiệu xác nhận hoặc phản bác. |
+| CP4-A3 | Dữ liệu phỏng vấn có thể được ẩn danh bằng vai trò, bối cảnh, ngày và phương pháp mà không lưu tên, email hoặc nội dung repository riêng tư. | `RULES.md` yêu cầu bảo vệ thông tin cá nhân và dữ liệu phỏng vấn trong repository public. | Nhóm có thể đưa bằng chứng vào report mà không để lộ thông tin cá nhân. | Tạo interview snapshot chỉ dùng vai trò, sau đó rà soát thông tin cá nhân hoặc nội bộ trước khi commit. |
+| CP4-A4 | Các phương án không dùng AI hoặc solution có sẵn có thể giải quyết phần lớn problem, nhưng phương án cụ thể phải phụ thuộc candidate nhóm chọn. Với candidate kiểm tra repository, checklist, repository template, cấu trúc Markdown và kiểm tra link/file là các hướng ban đầu. | Bốn báo cáo đề xuất nhiều domain khác nhau; không thể dùng research của một domain để kết luận cho domain khác. | Research sai phạm vi có thể khiến nhóm đánh giá nhầm khoảng trống và chọn mức can thiệp không phù hợp. | Chỉ research sau khi CP3 chốt candidate; ghi 2–3 nguồn đúng domain, bước được giải quyết và khoảng trống còn lại. |
+
+## CP5 – Giả định
+
+| ID | Mô tả giả định | Lý do đưa ra giả định | Tác động đến dự án | Cách kiểm chứng |
+|---|---|---|---|---|
+| CP5-A1 | Candidate cuối cùng của nhóm, dù đến từ báo cáo nào, có thể được mô tả thành một quy trình hữu hạn với actor, input, output, handoff và thời gian của từng bước. | CP5 yêu cầu quy trình hiện tại và bottleneck cụ thể; bốn báo cáo hiện mới mô tả các quy trình cá nhân, chưa có process map chung. | Nếu candidate được chọn khác Card #1 của báo cáo này, các assumption về repository phải được thay thế bằng process map của candidate mới. | Sau CP3–CP4, yêu cầu actor của candidate được chọn mô tả một lần xảy ra gần nhất và ghi lại từng bước, input, output, handoff và thời lượng. |
+| CP5-A2 | Baseline khoảng 30 phút là toàn bộ thời gian kiểm tra trước khi nộp một assignment, không phải thời gian của một bước riêng lẻ. | CP2 hiện chỉ có tổng thời gian và chưa xác định bottleneck chính xác. | Target và so sánh before/after có thể sai nếu diễn giải nhầm baseline. | Bấm giờ từng bước trong 2–3 lần review assignment thật và tách tổng thời gian khỏi thời gian bottleneck. |
+| CP5-A3 | Quy trình hiện tại phụ thuộc vào việc đối chiếu instruction của assignment, rubric, submission guide, cấu trúc repository và nội dung report. | Đây là các input cụ thể đã được nêu trong Job Story và Problem Card. | Quy trình tương lai có thể dùng checklist có thể truy vết thay vì một bước “review chất lượng” không rõ ràng. | So sánh process map với các file thực tế được dùng trong một assignment và ghi lại input thừa hoặc còn thiếu. |
+| CP5-A4 | Một người sẽ review lần cuối trước khi commit/nộp, đồng thời quy trình có fallback thủ công nếu automated check không hoạt động hoặc cho kết quả không chắc chắn. | CP5 yêu cầu HITL, boundary và phương án quay về. | Thiết kế không coi repository checker là cơ chế quyết định cuối cùng và giảm tác động của false positive hoặc mục bị bỏ sót. | Đưa bước human review, boundary và fallback vào future-state process rồi thử trên một repository. |
+
+## CP6 – Giả định
+
+| ID | Mô tả giả định | Lý do đưa ra giả định | Tác động đến dự án | Cách kiểm chứng |
+|---|---|---|---|---|
+| CP6-A1 | Nếu nhóm chọn candidate kiểm tra repository, mức can thiệp ban đầu phù hợp nên là `No AI` hoặc `Rule`, vì tên file, section bắt buộc, link và cấu trúc repository chủ yếu là các kiểm tra xác định. Nếu nhóm chọn candidate khác, mức can thiệp phải được đánh giá lại từ process map của candidate đó. | Card CP2 của báo cáo này đã nêu checklist và automated check đơn giản; tuy nhiên CP6 phải dựa trên candidate chung sau CP3–CP5. | Nhóm không nên đưa `Agent` hoặc generative AI vào trước khi chứng minh mức đơn giản hơn là không đủ. | Sau khi chốt candidate, so sánh mức `No AI`, `Rule`, `Workflow`, `Agent` với các trường hợp thật và ghi lại các trường hợp mức thấp hơn chưa giải quyết được. |
+| CP6-A2 | Checklist hoặc `Rule` xác định có thể bao phủ phần lớn kiểm tra về tính đầy đủ và cấu trúc, nhưng vẫn cần human judgment cho chất lượng nội dung và yêu cầu mơ hồ. | Một số yêu cầu có thể kiểm tra bằng máy, nhưng không thể quyết định nội dung “đủ tốt” chỉ dựa trên việc file có tồn tại hay không. | Boundary phải tách rõ mechanical validation khỏi human judgment. | Chạy các check đề xuất trên ít nhất hai repository và ghi false positive, mục bị bỏ sót cùng các trường hợp cần human review. |
+| CP6-A3 | Quy trình được chọn không được tự động sửa file, submit repository hoặc tuyên bố assignment hoàn toàn đạt nếu chưa có xác nhận của con người. | Card CP2 giữ quyết định cuối cùng cho sinh viên, còn CP5 yêu cầu có human checkpoint. | Giới hạn tác động của check sai và giữ trách nhiệm ở sinh viên/nhóm. | Đưa các giới hạn này vào boundary của CP5 và kiểm tra lại trong future-state workflow. |
+| CP6-A4 | Chỉ nên quyết định `Go` sau khi một pilot nhỏ chứng minh thời gian giảm so với baseline khoảng 30 phút mà số yêu cầu bị bỏ sót không tăng. | CP6 yêu cầu quyết định dựa trên Value, Usability, Feasibility, Viability và có ngưỡng dừng đo được. | Nếu chưa có pilot evidence, trạng thái phù hợp là `Not Yet`, không phải `Go` không có căn cứ. | Thử checklist/Rule trên ít nhất hai assignment, so sánh thời gian review và số mục bị bỏ sót, sau đó đặt stop rule; ví dụ quay về checklist thủ công nếu số mục bị bỏ sót tăng. |
+
+## Tóm tắt các giả định
+
+### Các giả định quan trọng
+
+- Bốn báo cáo cá nhân thực sự đại diện cho các candidate mà nhóm sẽ đưa vào CP3, nhưng nhóm vẫn phải xác nhận không còn candidate hoặc thành viên bị thiếu.
+- Nhóm có thể hội tụ từ các domain khác nhau bằng pain và process chung, không chỉ bằng chủ đề ngành.
+- Người dùng khác ngoài tác giả cũng gặp problem kiểm tra repository.
+- Baseline 30 phút có thể lặp lại và phân tách thành các bước đo được.
+- Checklist hoặc `Rule` xác định có thể xử lý phần lớn kiểm tra cấu trúc và tính đầy đủ.
+- Human review vẫn cần thiết đối với chất lượng nội dung và yêu cầu mơ hồ.
+
+### Các giả định phụ thuộc checkpoint trước
+
+- CP3 phụ thuộc vào việc nhận candidate của tất cả thành viên và ghi lại pitch cùng quá trình so sánh thực tế.
+- Nếu nhóm chọn candidate từ báo cáo của thành viên khác, các assumption về repository trong CP4–CP6 phải được thay thế bằng assumption phù hợp với domain và actor mới.
+- CP4 phụ thuộc vào việc nhóm chọn một candidate, sau đó kiểm chứng các giả định về hành vi với người thật.
+- CP5 phụ thuộc vào evidence của CP4 và phải sử dụng process, baseline, bottleneck, boundary và fallback đã được kiểm chứng.
+- CP6 phụ thuộc vào process map của CP5 và không được chọn mức can thiệp cao hơn chỉ vì mức đó có thể triển khai về mặt kỹ thuật.
+
+### Các giả định cần kiểm chứng
+
+Nhóm vẫn cần kiểm chứng nhu cầu của người dùng bên ngoài, bottleneck chính trong 30 phút review, hiệu quả của checklist/`Rule` và tỷ lệ lỗi có thể chấp nhận đối với các mục bị bỏ sót hoặc bị đánh dấu nhầm.
+
+### Rủi ro nếu giả định sai
+
+- Nếu người dùng khác không gặp problem này, Value risk sẽ cao và candidate cần được thu hẹp hoặc loại bỏ.
+- Nếu không lặp lại được baseline 30 phút, success metric và target phải được tính lại.
+- Nếu deterministic check bỏ sót quá nhiều vấn đề về nội dung hoặc diễn giải, `Rule` có thể không đủ và cần đánh giá một `Workflow` có kiểm soát.
+- Nếu quy trình cần quyền truy cập vào repository riêng tư hoặc dữ liệu assignment chưa rõ, cần đánh giá lại Feasibility risk và Viability risk trước khi đề xuất automation.
 
 ---
 
