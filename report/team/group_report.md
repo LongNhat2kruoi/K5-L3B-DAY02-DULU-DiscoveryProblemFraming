@@ -80,47 +80,96 @@ Những ý đã gạch bỏ vì là solution đội lốt opportunity:
 
 | # | Giả định | Loại (Value / Usability / Feasibility / Viability) | Quan trọng (1–5) | Đã có bằng chứng (1–5) | Kiểm chứng trước? |
 |---:|---|---|---:|---:|---|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
-| 6 | | | | | |
+| 1 | Thành viên phụ trách nộp bài ở nhóm khác cũng phải rà soát repository lặp lại và mất thời gian đáng kể. | Value | 5 | 1 | Ưu tiên 1: hỏi 2–3 người ngoài nhóm về lần nộp gần nhất. |
+| 2 | Khoảng 30 phút/bài là thời gian rà soát thực tế, tách được khỏi thời gian viết bài, chờ thành viên và sửa nội dung. | Value | 5 | 2 | Ưu tiên 1: dựng lại lần gần nhất và bấm giờ một lượt review. |
+| 3 | Đối chiếu yêu cầu với file/mục trong báo cáo là bước mất nhiều thời gian nhất, thay vì kiểm tra link hoặc chờ bàn giao. | Value | 5 | 1 | Ưu tiên 1: ghi thời gian từng bước, không suy từ tổng 30 phút. |
+| 4 | Các yêu cầu về file, tên thư mục và liên kết có thể chuyển thành checklist hoặc kiểm tra xác định; chất lượng lập luận vẫn cần người đọc. | Feasibility | 4 | 3 | Ưu tiên 2: đối chiếu SUBMISSION.md, rubric và khả năng của công cụ hiện có. |
+| 5 | Người review có thể truy ngược mỗi cảnh báo tới yêu cầu và vị trí cần sửa, không tốn thêm nhiều công kiểm tra lại. | Usability | 4 | 1 | Ưu tiên 2: quan sát người ngoài nhóm dùng checklist trên repository của họ. |
+| 6 | Quy trình rà soát phù hợp quy định môn học và quyền truy cập repository, không đòi chia sẻ thông tin đăng nhập hoặc tự nộp bài. | Viability | 4 | 2 | Ưu tiên 2: đọc RULES.md, xác nhận quyền truy cập và người chịu trách nhiệm review. |
 
-*Điền 4–6 giả định; xóa dòng thừa.*
+Thang điểm: **quan trọng** 5 = nếu sai phải xem lại candidate; **bằng chứng** 1 = chưa có dữ liệu trực tiếp, 2 = tự báo cáo đơn lẻ/tài liệu nội bộ, 3 = có tài liệu đối chiếu nhưng chưa thử với người dùng, 4–5 = có quan sát hoặc đo lặp lại. Điểm là đánh giá sơ bộ, không phải kết quả khảo sát.
 
-Giả định nhóm kiểm chứng trong buổi này:
+Phân ô hai trục: cả 6 giả định đều quan trọng cao (4–5); #1, #2, #3, #5, #6 thuộc ô ít bằng chứng (1–2), #4 có bằng chứng tài liệu ở mức trung bình (3). Chưa có giả định nào thuộc ô bằng chứng mạnh (4–5). **Kiểm chứng #1–#3 trước** vì quyết định pain có phổ biến, baseline có đúng và bottleneck nằm ở đâu.
 
 ### 3.2. Kiểm chứng
 
-Cách đã dùng: Phỏng vấn / Survey / Log, ticket, review
+Cách đã dùng: đọc bằng chứng có sẵn trong báo cáo cá nhân và đối chiếu tài liệu repository. **Chưa có phỏng vấn/survey ngoài nhóm; phần kiểm chứng người dùng của CP4 chưa hoàn tất.** Các báo cáo thành viên là nguồn hình thành giả thuyết, không thay thế phỏng vấn 2–3 người ngoài nhóm hoặc survey 5–10 người theo yêu cầu.
 
-Interview snapshot (mỗi buổi phỏng vấn một bảng, hoặc đặt file trong `report/assets/cp4-interview-snapshot-N.md`):
+**Bằng chứng hiện có:** [báo cáo cá nhân đề xuất candidate, mục 2 và Problem Card #1](../individual/2A202603881_LeSyLongNhat.md) ghi khoảng 30 phút/bài và gần như mỗi assignment. Đây là tự báo cáo của một thành viên; chưa có ngày của lần nộp cụ thể, log bấm giờ, số lỗi hay số liệu từ người ngoài nhóm. Không diễn giải thành “mọi nhóm đều mất 30 phút” hoặc “bước đối chiếu riêng mất 30 phút”.
 
-| Trường | Nội dung |
+**Kế hoạch phỏng vấn nhanh (chưa thực hiện):** chọn 2–3 sinh viên thuộc nhóm khác đã trực tiếp review/nộp một bài lab GitHub gần đây. Mỗi người khoảng 5 phút; xin xem checklist hoặc file liên quan nếu họ đồng ý, ghi vai trò và thời điểm, không ghi thông tin nhận dạng.
+
+1. Lần gần nhất bạn kiểm tra repository trước khi nộp là khi nào? Bạn phụ trách phần nào?
+2. Kể lại từng bước từ lúc bắt đầu rà soát đến lúc nộp; bạn đã mở những tài liệu nào?
+3. Mỗi bước mất khoảng bao lâu? Khoảng nào là chờ người khác, viết bổ sung hoặc sửa bài?
+4. Lần đó bạn phát hiện thiếu/sai mục nào? Bạn phát hiện bằng cách nào và đã xử lý ra sao?
+5. Lần đó bạn dùng checklist, script hay cách kiểm tra nào khác? Cho một ví dụ nó giúp được hoặc bỏ sót điều gì.
+6. Kể một lần việc kiểm tra diễn ra nhanh, không gặp khó khăn; điều gì khác so với lần mất nhiều thời gian?
+
+**Snapshot tham khảo cho TH1 — giả lập, không phải buổi phỏng vấn thật.** Bảng dưới minh họa cách điền; khi phỏng vấn thực tế, thay bằng dữ liệu có nguồn và tạo bảng riêng cho từng người.
+
+| Trường | Nội dung tham khảo — tình huống giả lập TH1 |
 |---|---|
-| Người được hỏi (vai trò, không ghi tên thật) | |
-| Câu nói đáng nhớ nhất (nguyên văn) | |
-| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | |
-| Hiện đang xử lý bằng cách nào (workaround)? | |
-| Mất bao lâu, bao lần? | |
-| Insight / opportunity rút ra | |
+| Mã người được hỏi / vai trò / nhóm khác | TH1 là mã tình huống; vai trò giả định: sinh viên phụ trách tổng hợp và review bài lab GitHub của một nhóm khác. Không đại diện cho người thật. |
+| Ngày giờ / cách hỏi / người phỏng vấn | Không có buổi phỏng vấn diễn ra. AI tạo kịch bản tham khảo theo bộ câu hỏi phía trên; không có ngày giờ hoặc người phỏng vấn thực tế. |
+| Câu nói đáng nhớ nhất (nguyên văn) | Không có trích dẫn thật. Ý chính của kịch bản: kiểm tra đủ file tương đối dễ, nhưng phải mở nhiều tài liệu để biết từng mục đã đáp ứng yêu cầu hay chưa. Đây là diễn giải minh họa, không phải lời người được hỏi. |
+| Lần gần nhất gặp vấn đề: bối cảnh, các bước, lỗi cụ thể | Trong kịch bản, sau khi ghép các phần báo cáo, người review đọc lại yêu cầu, kiểm tra cấu trúc, đối chiếu từng mục rồi mở link. Phát hiện một mục bắt buộc chưa có nội dung và một link ảnh sai đường dẫn. Không có assignment thật được quan sát. |
+| Workaround và bằng chứng được cho xem | Cách xử lý giả định: mở README, rubric, submission guide song song với báo cáo và ghi các mục cần sửa. Không có file, ảnh chụp hay log được người dùng cung cấp; tài liệu trong repository chỉ là bối cảnh xây dựng kịch bản. |
+| Thời gian từng bước / tần suất / cách ước lượng hoặc đo | Số phút giả định: đọc yêu cầu 5 + kiểm tra file/cấu trúc 5 + đối chiếu nội dung 15 + kiểm tra link 5 = 30 phút/lượt. Không tính chờ bàn giao hoặc sửa bài. Tần suất chưa xác định; đây là số liệu đặt cho ví dụ, không được bấm giờ hay thu từ người dùng. |
+| Tín hiệu phản bác / điều trái giả định | Trong TH1, đối chiếu nội dung chỉ chiếm 15/30 phút, nên không thể coi toàn bộ 30 phút là bottleneck này. TH3 ở phần dưới còn minh họa khả năng checklist có mapping đã giúp review nhanh; đây đều là phản ví dụ giả lập cần kiểm tra với người thật. |
+| Insight / giả định nào được xác nhận hoặc bác bỏ | Insight tham khảo: nên gắn yêu cầu với file/mục và tách kiểm tra cấu trúc khỏi đánh giá nội dung. Kịch bản gợi cách kiểm tra giả định #2–#3 nhưng không xác nhận hoặc bác bỏ bất kỳ giả định nào bằng bằng chứng thực tế. |
 
 Tổng hợp:
 
 | Nguồn | Số người / số mẫu | Tín hiệu xác nhận | Tín hiệu phản bác |
 |---|---:|---|---|
-| | | | |
+| Báo cáo cá nhân đề xuất candidate | 1 thành viên; số assignment chưa được ghi cụ thể | Tự báo cáo khoảng 30 phút/bài, gần như mỗi assignment. | Chưa tách thời gian từng bước; chưa chứng minh đối chiếu yêu cầu là bottleneck chính. |
+| SUBMISSION.md trong repository | 1 tài liệu | Có checklist trước khi nộp và cấu trúc file bắt buộc để đối chiếu. | **Tín hiệu phản bác từ tài liệu:** đã có checklist; giả định “thiếu checklist nên review chậm” chưa đứng vững. Cần hỏi vì sao cách hiện có chưa đủ. |
+| Phỏng vấn ngoài nhóm | 0 người | Chưa có. | Chưa có dữ liệu hành vi để biết người khác có gặp pain hoặc review nhanh hơn đáng kể. |
 
 **Nhóm đã sửa problem thế nào sau kiểm chứng:**
+
+Sau đối chiếu nguồn hiện có, đề xuất thu hẹp candidate thành: **Khi rà soát bài lab GitHub theo nhóm trước lúc nộp, người phụ trách phải đối chiếu yêu cầu trong tài liệu với file và các mục báo cáo để tìm phần còn thiếu hoặc sai; chưa rõ bước nào chiếm nhiều thời gian nhất.** Mốc khoảng 30 phút chỉ mô tả trải nghiệm ban đầu của một thành viên và toàn bộ lượt review. Chưa kết luận đây là pain phổ biến, chưa quy nguyên nhân cho việc thiếu công cụ và chưa chọn mức can thiệp AI.
+
+Điều kiện cập nhật sau phỏng vấn: nếu ít nhất 2 người ngoài nhóm kể được lần review cụ thể có công đối chiếu đáng kể, tiếp tục đo từng bước; nếu phần lớn thời gian là chờ bàn giao/viết bổ sung thì chuyển trọng tâm sang phối hợp hoàn thiện bài; nếu checklist hiện có đã giúp review nhanh và ít lỗi thì xem lại mức độ đáng giải của candidate. Đây là quy tắc đọc kết quả dự kiến, không phải kết quả đã xảy ra.
+
+#### Kết quả tham khảo — tình huống giả lập
+
+> **Toàn bộ dữ liệu dưới đây do AI tạo để minh họa cách tổng hợp CP4 theo yêu cầu tham khảo. Không có người tham gia thật, không có buổi phỏng vấn hay phép đo đã diễn ra. Không dùng phần này làm bằng chứng kiểm chứng hoặc kết quả phỏng vấn khi nộp bài.** Các mã TH1–TH3 là tình huống giả lập, không phải mã người được hỏi. Không tạo câu trích dẫn nguyên văn vì không có lời nói thật.
+
+| Trường | TH1 — Người tổng hợp bài (giả lập) | TH2 — Người review cuối (giả lập) | TH3 — Nhóm đã có checklist (giả lập) |
+|---|---|---|---|
+| Bối cảnh minh họa | Các thành viên đã ghép báo cáo, người tổng hợp bắt đầu kiểm tra trước khi nộp. | Nhiều phần báo cáo được cập nhật riêng, người review đối chiếu bản cuối với đề. | Nhóm dùng checklist có sẵn, mỗi yêu cầu đã gắn với một file/mục và người phụ trách. |
+| Cách xử lý trong kịch bản | Mở README, rubric và submission guide rồi dò lần lượt trong repository. | Đọc rubric theo từng tiêu chí, mở file tương ứng, ghi mục cần bổ sung. | Đi theo checklist, mở vị trí đã ghi và kiểm tra trạng thái thực tế. |
+| Thời gian giả định, chỉ tính rà soát | 30 phút: đọc lại yêu cầu 5, kiểm tra file/cấu trúc 5, đối chiếu nội dung 15, kiểm tra link 5. | 25 phút: đọc lại yêu cầu 4, kiểm tra file/cấu trúc 4, đối chiếu nội dung 13, kiểm tra link 4. | 10 phút: đọc lại yêu cầu 1, kiểm tra file/cấu trúc 2, đối chiếu nội dung 5, kiểm tra link 2. |
+| Vấn đề giả định phát hiện | Một mục bắt buộc chưa có nội dung và một link ảnh sai đường dẫn. | Một trường metric chưa có baseline và một mục còn nguyên template. | Không phát hiện thiếu file hoặc mục bắt buộc trong lượt kiểm tra minh họa. |
+| Phạm vi số phút | Không gồm thời gian sửa lỗi, chờ thành viên hoặc viết bổ sung. | Không gồm thời gian sửa lỗi, chờ thành viên hoặc viết bổ sung. | Không gồm thời gian tạo và duy trì checklist từ đầu assignment. |
+| Insight minh họa | Có đủ file chưa đồng nghĩa đủ nội dung; cần chỉ rõ yêu cầu nằm ở đâu. | Mục có chữ vẫn có thể chưa đáp ứng rubric, cần người đọc đánh giá. | Checklist có mapping rõ có thể đã đủ cho một số nhóm; cần kiểm tra phương án đơn giản trước. |
+
+**Ví dụ tổng hợp nếu thu được dữ liệu thật tương tự:**
+
+- Hai tình huống chưa có mapping yêu cầu → vị trí nội dung mất 25–30 phút; tình huống đã có mapping mất 10 phút. Đây chỉ là sự khác nhau được đặt trong kịch bản, chưa chứng minh checklist gây ra mức giảm thời gian đó.
+- Bước đối chiếu nội dung chiếm 15/30, 13/25 và 5/10 phút trong ba tình huống, nên là ứng viên bottleneck cần đo thực tế. Không cộng thời gian sửa bài vào thời gian review.
+- Tín hiệu phản bác minh họa: TH3 review nhanh với cách làm hiện có. Vì vậy không thể kết luận mọi nhóm đều cần công cụ mới hoặc đều mất khoảng 30 phút.
+- Giả định #1 chỉ được hỗ trợ nếu người ngoài nhóm thật sự kể lại hành vi tương tự TH1–TH2; #2 cần đổi từ một mốc 30 phút sang thời gian theo từng trường hợp; #3 cần log từng bước. #4–#6 vẫn cần kiểm tra riêng, không được xác nhận chỉ từ ba kịch bản.
+
+**Candidate điều chỉnh tham khảo theo kịch bản:** Khi hoàn thiện bài lab GitHub theo nhóm, người phụ trách review ở nhóm chưa có bảng đối chiếu yêu cầu với vị trí nội dung phải dò qua nhiều tài liệu và file để phát hiện mục còn thiếu hoặc chưa đáp ứng rubric, làm lượt rà soát kéo dài. Phạm vi ưu tiên là công đối chiếu trước khi nộp; tách khỏi việc chờ bàn giao và sửa nội dung.
+
+**Bước kiểm tra tiếp theo trong ví dụ:** cho người review thử checklist có các cột yêu cầu, nguồn, file/mục, trạng thái và người xác nhận; ghi cả thời gian tạo checklist lẫn thời gian review, số mục bỏ sót và cảnh báo nhầm. So sánh với cách làm hiện tại trên bài có mức độ tương đương trước khi đặt target hoặc chọn mức can thiệp.
 
 ### 3.3. Research giải pháp đã có
 
 | Công cụ / case / pattern | Link | Giải bước nào trong quy trình? | Điểm mạnh | Khoảng trống / rủi ro | Bài học cho nhóm |
 |---|---|---|---|---|---|
-| | | | | | |
-| | | | | | |
-| | | | | | |
+| Checklist Markdown trong GitHub Issue | [GitHub Docs — About tasklists](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/about-tasklists) | Chia yêu cầu thành các việc và đánh dấu hoàn tất khi review. | Checkbox Markdown giúp theo dõi trạng thái. | Người review vẫn phải chuyển yêu cầu thành checklist và tự xác nhận nội dung; tích ô không chứng minh bài đạt rubric. | Tận dụng checklist có sẵn trong SUBMISSION.md, thêm vị trí file/mục và người kiểm tra. |
+| Markdownlint (Ruby, lệnh mdl) | [Repository chính thức](https://github.com/markdownlint/markdownlint) | Rà soát quy tắc trình bày Markdown trong file/thư mục; báo lỗi kèm dòng. | Có rule và cấu hình style để kiểm tra nhất quán. | Phạm vi là style Markdown; không xác nhận đủ deliverable hoặc lập luận đạt rubric. | Tách lỗi định dạng khỏi đánh giá chất lượng nội dung, chỉ bật rule phù hợp bài lab. |
+| Lychee | [Repository chính thức](https://github.com/lycheeverse/lychee) | Kiểm tra liên kết trong Markdown/HTML và hỗ trợ rà soát link trước khi nộp. | Có CLI và cách tích hợp GitHub Actions. | Link truy cập được chưa chắc trỏ đúng tài liệu cần nộp; cần người xác nhận ngữ cảnh và quyền xem của người chấm. | Dùng kiểm tra link như một phần của lượt review; giữ bước mở và đối chiếu nội dung đích. |
+
+**Kiểm tra nguồn:** đã mở và đọc 3 nguồn chính thức trên ngày 09/11/2026. GitHub Docs phân biệt checkbox Markdown với tính năng tasklist blocks đã ngừng; đề xuất ở đây dùng checkbox Markdown thông thường. Các khoảng trống và bài học là nhận định của nhóm từ phạm vi công cụ, chưa phải kết quả pilot. Chưa cài/chạy các công cụ trên repository và chưa có số liệu chứng minh tiết kiệm thời gian.
+
+**Kết luận research:** đã có cách theo dõi checklist, kiểm tra style và kiểm tra link. Khoảng cần kiểm chứng tiếp là công đối chiếu yêu cầu với vị trí nội dung và việc người review vẫn bỏ sót dù đã có checklist. Research hỗ trợ giả định #4 về tính khả thi, chưa xác nhận #1–#3 về nhu cầu và bottleneck.
+
+**Việc còn thiếu để chốt CP4:** thực hiện 2–3 phỏng vấn ngoài nhóm (hoặc survey 5–10 người), điền dữ liệu thật kèm thời điểm/cách hỏi, ghi tín hiệu phản bác từ người dùng và cập nhật lại assumption map cùng candidate theo kết quả.
 
 ---
 
