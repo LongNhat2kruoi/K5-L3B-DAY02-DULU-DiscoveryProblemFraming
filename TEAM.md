@@ -54,3 +54,25 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 **Điều mình học được từ phần nhóm:**
 
 -
+
+
+
+### VuongQuangThang-2A202603855
+
+**Phần việc phụ trách:**
+- Chuẩn bị Candidate mảng truyền thông sự kiện (CP1, CP2).
+- Đánh giá mức can thiệp AI, trả lời câu hỏi Google PAIR (CP6).
+- Viết Problem Statement v1, Tiêu chí đánh giá, đánh giá 4 rủi ro và ra quyết định cuối cùng (CP6).
+
+**Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
+- Pitch 3 thẻ bài cá nhân (CP1, CP2).
+- Trực tiếp soạn thảo nội dung mục 6 (Mức can thiệp AI), mục 7 (Problem Statement v1) và mục 8 (Quyết định) trong báo cáo nhóm.
+- Đưa ra 3 tiêu chí đánh giá AI (Đúng luật, Độ nhạy, Tính hành động) và thiết lập Ngưỡng dừng (Stopping threshold) rõ ràng để bảo vệ nhóm khỏi rủi ro AI hallucination.
+
+**Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
+- Báo cáo cá nhân: file `report/individual/[MSSV]_VuongQuangThang.md` (mục 2, 3, 4, 5, 6).
+- Báo cáo nhóm: file `report/team/group_report.md` (trực tiếp viết Mục 6, 7, 8).
+- Lịch sử commit trên Github do tài khoản `vuongquangthang` thực hiện.
+
+**Điều mình học được từ phần nhóm:**
+- Do chỉ đảm nhận CP6, tôi nhận ra tầm quan trọng của việc hiểu rõ luồng quy trình hiện tại (CP5 do bạn khác làm) trước khi quyết định "cắm" AI vào đâu. Tôi học được cách biện luận sắc bén khi so sánh 4 mức độ can thiệp, hiểu rằng không phải cứ dùng AI mức cao (Agent) là tốt, mà phải chọn mức Workflow phù hợp nhất để cân bằng giữa hiệu suất và sự an toàn.
