@@ -15,7 +15,7 @@
 | 1 | Nguyễn Mạnh Hùng | 2A202603852 | Phụ trách CP5 — Quy trình trước/sau + Problem Statement v0; báo cáo cá nhân CP1, CP2, CP7 | HungLunnn |
 | 2 | Vương Quang Thắng | 2A202603855 | Chưa xác nhận | Chưa xác nhận |
 | 3 | Ngô Duy Khánh | 2A202603870 | Phụ trách CP4 — chuẩn bị kiểm chứng và research; báo cáo cá nhân CP1, CP2, CP7 | dkhanhdev |
-| 4 | Lê Sỹ Long Nhật | 2A202603881 | Phụ trách chính CP3 — Hội tụ nhóm | LongNhat2kruoi |
+| 4 | Lê Sỹ Long Nhật | 2A202603881 | Phụ trách chính CP3 — Nhóm trưởng | LongNhat2kruoi |
 
 Không ghi email hay số điện thoại vào bảng này, vì repo có thể để public.
 
