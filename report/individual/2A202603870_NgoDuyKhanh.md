@@ -1,7 +1,5 @@
 # Báo cáo cá nhân — 2A202603870_NgoDuyKhanh
 
-> **Bản nháp CP1–CP2 có AI hỗ trợ.** Các Job Story và quy trình dưới đây là tình huống đề xuất dựa trên repo Day 02. Số đếm tài liệu và yêu cầu lấy từ repo. Số phút dùng để minh họa cách tính baseline và đặt mục tiêu, chưa phải số đo hay trải nghiệm đã xác nhận của Khánh.
-
 ## 1. Thông tin học viên
 
 - Họ tên: Ngô Duy Khánh
@@ -11,106 +9,116 @@
 
 ## 2. Scan problem (CP1)
 
-| # | Lăng kính | Job Story | Ai chịu ảnh hưởng? | Dấu hiệu quan sát được trong repo và dữ liệu cần xác nhận |
-|---:|---|---|---|---|
-| 1 | Lặp lại | Khi rà bản nháp cá nhân trước một lần nộp lab, tôi muốn biết còn thiếu nội dung nào ở CP1–CP2, để sửa đúng chỗ trước khi gửi. | Học viên tự rà bài | [Mẫu cá nhân](MSSV_HoTen.md) và [rubric](../../RUBRIC.md) tách bảng scan, ba card, ba sơ đồ và nhật ký phản biện. Cần ghi một lần rà thật, thời gian rà và các mục phát hiện thiếu. |
-| 2 | Tốn thời gian | Khi chuẩn bị pitch một vấn đề, tôi muốn xác định bước nào làm chậm quy trình, để giải thích cho nhóm bằng số đo của lần gần nhất. | Học viên chuẩn bị pitch | [CP2](../../CHECKPOINTS.md) yêu cầu ba sơ đồ, mỗi sơ đồ 3–7 bước có số phút và bước nghẽn. Cần ghi thời gian tái dựng một quy trình, các bước khó nhớ và dấu vết có thể đối chiếu. |
-| 3 | Cần đọc, tổng hợp nhiều thông tin | Khi nhóm đã chọn một candidate, tôi muốn nối kết quả kiểm chứng với phần mô tả vấn đề, để biết nhận định nào cần sửa trước khi chốt. | Thành viên tổng hợp kết quả kiểm chứng | [Mẫu nhóm](../team/group_report.md) tách phần kiểm chứng, Problem Statement v0 và v1 thành ba mục. Cần ghi một nhận định đã đối chiếu, nguồn kiểm chứng và thời gian truy lại nguồn. |
-| 4 | Pain từ người khác | Khi nhận phụ trách một phần báo cáo nhóm, tôi muốn biết đầu ra cần giao và ai sẽ dùng nó, để bàn giao đủ nội dung cho người làm bước tiếp theo. | Thành viên mới nhận việc và người nhận bàn giao | [Bảng phân công](../../TEAM.md) có bảy dòng cho các đầu ra từ CP3 đến CP6. Cần xác nhận một lần bạn trong nhóm thực sự phải hỏi lại, số lượt hỏi và phần việc bị chờ. |
-| 5 | Cần đọc, tổng hợp nhiều thông tin | Khi lần đầu chuẩn bị nộp bài Day 02, tôi muốn xác định đúng repo và nơi nộp, để gửi đúng đường dẫn trong lần đầu. | Học viên tự nộp bài | [Hướng dẫn nộp](../../SUBMISSION.md) phân biệt hai quy tắc đặt tên (repo và file cá nhân) và yêu cầu mỗi thành viên nộp cùng một link repo. Cần ghi số nguồn đã mở, số phút để xác nhận và lỗi thực tế nếu có. |
+**Bản nháp để đối chiếu với trải nghiệm cá nhân.** Chủ đề là phối hợp làm bài tập nhóm và chuẩn bị bản nộp. Dòng #6 có dấu vết Git từ phiên làm bài này. Các dòng #1–#5 là tình huống đề xuất. Số lượng và số phút ở những dòng đó là số minh họa, cần thay bằng số của một lần thực tế.
 
-**Dùng AI ở CP1.** Codex đề xuất các tình huống và phát triển năm ý trên từ cấu trúc bài lab. Các ý đổi môi trường cài đặt và ôn tập từ nhiều nguồn được bỏ khỏi bản nháp vì repo này không cung cấp dấu vết cho hai tình huống đó. Việc giữ ý nào trong bài nộp phụ thuộc vào trải nghiệm và bằng chứng của học viên.
+| # | Lăng kính | Job Story | Ai chịu ảnh hưởng? | Dấu hiệu và nguồn có thể kiểm |
+|---:|---|---|---|---|
+| 1 | Lặp lại | Khi đến lượt cập nhật tiến độ bài nhóm, tôi muốn biết đầu việc nào đã xong và việc nào đang chờ, để chốt đúng phần cần làm tiếp. | Người điều phối nhóm, thành viên đang chờ phần bàn giao | Minh họa: rà 8 đầu việc mất 20 phút/lượt. Kiểm bằng bảng phân công và số đầu việc phải hỏi lại trong lần cập nhật gần nhất. |
+| 2 | Cần đọc, tổng hợp nhiều thông tin | Khi nhận góp ý cho bản nháp báo cáo từ cả nhóm chat và tài liệu, tôi muốn biết từng góp ý cần sửa ở đoạn nào, để phân công sửa một lượt và tránh bỏ sót. | Người tổng hợp báo cáo và người được giao sửa | Minh họa: xử lý 12 góp ý từ hai nguồn mất 36 phút/lượt. Kiểm bằng danh sách nhận xét của một vòng duyệt đã ẩn danh và thời gian gom góp ý. |
+| 3 | Tốn thời gian | Khi các thành viên đã gửi xong phần của mình, tôi muốn ghép chúng thành một bản có cấu trúc và liên kết đúng, để kịp gửi cả nhóm kiểm tra trước hạn. | Thành viên phụ trách ghép báo cáo | Minh họa: ghép 3 phần vào một file Markdown mất 30 phút. Kiểm bằng lịch sử sửa file và số bảng, ảnh hoặc đường dẫn phải chỉnh lại. |
+| 4 | Pain từ người khác | Khi nhận một đầu việc nhóm, tôi muốn biết mình cần bàn giao nội dung gì và ở đâu, để bắt đầu làm mà không phải đợi người giao việc giải thích thêm. | Thành viên mới nhận việc và người giao việc | Minh họa: phải hỏi lại hai lượt về định dạng và vị trí lưu. Kiểm bằng tin nhắn của một lần bàn giao thực tế, ghi vai trò và che tên người. |
+| 5 | Cần đọc, tổng hợp nhiều thông tin | Khi chuẩn bị sửa báo cáo sau một buổi họp, tôi muốn tìm lại phương án nhóm đã chốt và lý do chọn, để tránh sửa theo một đề xuất đã bị loại. | Thành viên đang sửa báo cáo | Minh họa: tìm một quyết định trong tin nhắn và ghi chú họp mất 18 phút. Kiểm bằng mốc họp, tin nhắn chốt và thời gian tìm được đoạn cần dùng. |
+| 6 | Tốn thời gian | Khi đưa bài cá nhân lên repo chung, tôi muốn xác định đúng nhánh và file sẽ được đưa lên, để đồng đội tìm được bản của tôi. | Thành viên nộp bài qua Git | Ở lượt push đầu tiên trong phiên làm bài, remote chỉ có nhánh `main`. Phải tạo thêm **1 nhánh cá nhân** để push commit `da4a4c6`, trong đó có **1 file báo cáo**. Chưa đo số phút thao tác của học viên. |
+
+**Dùng AI ở CP1.** Codex gợi ý các tình huống theo bối cảnh bài tập nhóm, dựa trên cách bài của Vương Quang Thắng đi từ một vai trò quen thuộc đến các công việc cụ thể. Bản nháp bỏ tình huống nộp nhầm lên LMS vì chưa có dấu vết của một lượt nộp thật. Khánh cần tự chọn các ý khớp với trải nghiệm của mình và thay các số minh họa.
 
 ## 3. Top 3 Problem Cards + quy trình nháp (CP2)
 
-### Bảng chọn top 3
-
-| Rank | Problem | Vì sao chọn cho bản nháp | Điều còn chưa chắc |
+| Rank | Problem | Vì sao chọn | Điều còn chưa chắc |
 |---:|---|---|---|
-| 1 | Rà nội dung CP1–CP2 trước khi nộp (CP1 #1) | Actor tự rà bài, tiêu chí có sẵn trong rubric và có thể kiểm tra số mục bỏ sót. | Bước đối chiếu có thực sự tốn nhiều thời gian hơn bước tìm đúng tiêu chí không? |
-| 2 | Tái dựng thời gian từng bước trước khi pitch (CP1 #2) | Kết quả cần có rất cụ thể: một sơ đồ có số phút và bước nghẽn. Có thể kiểm tra với nhật ký hoặc bấm giờ. | Có đủ dấu vết để tách thời gian làm, thời gian chờ và thời gian sửa lại không? |
-| 3 | Xác định đúng repo và nơi nộp (CP1 #5) | Việc có điểm bắt đầu và kết thúc rõ. Hai điều kiện đúng có thể đối chiếu trực tiếp với hướng dẫn nộp. | Khó khăn nằm ở việc đọc hướng dẫn hay ở chỗ học viên chưa nhận được link repo nhóm? |
+| 1 | Gom và phân loại góp ý cho báo cáo (#2) | Có đầu vào và đầu ra rõ. Có thể đếm góp ý bị bỏ sót, gộp nhầm hoặc giao sai mục. | Tốn thời gian vì góp ý nằm ở hai nơi hay vì nhiều góp ý không chỉ rõ đoạn cần sửa? |
+| 2 | Ghép các phần thành bản Markdown chung (#3) | Có thể xác định phần nào chiếm nhiều phút và kiểm chất lượng bằng bản xem trước. | Thời gian chủ yếu nằm ở định dạng và liên kết hay ở việc chờ các phần hoàn tất? |
+| 3 | Tìm lại quyết định nhóm đã chốt (#5) | Phạm vi gọn, có thể bấm giờ cho mỗi lần tìm và kiểm kết quả bằng tin nhắn chốt. | Nhóm có thường ghi rõ quyết định cuối cùng hay chỉ thảo luận rồi chuyển sang việc khác? |
 
-### Problem Card #1 — Rà nội dung CP1–CP2
+**Số liệu CP2.** Ba quy trình dưới đây minh họa cách chia bước, tính tổng và đặt mục tiêu. Các mốc trước → sau là cặp giả định để thiết kế phép đo. Bước được đánh dấu là điểm nghi nghẽn cần kiểm bằng một lần thao tác thực tế.
+
+### Problem Card #1 — Gom và phân loại góp ý cho báo cáo
 
 | Trường | Nội dung |
 |---|---|
-| Job Story | Khi rà bản nháp cá nhân trước một lần nộp lab, tôi muốn biết còn thiếu nội dung nào ở CP1–CP2, để sửa đúng chỗ trước khi gửi. |
-| Actor | Học viên lớp L3B tự rà báo cáo cá nhân Day 02. |
-| Thời điểm / bối cảnh | Bản nháp đã có nội dung CP1–CP2 và đang được kiểm trước khi sửa lần cuối. |
-| Quy trình hiện tại cần xác nhận | Mở bản nháp → tìm tiêu chí CP1–CP2 → đối chiếu từng tiêu chí với nội dung → ghi danh sách chỗ cần sửa. |
-| Bottleneck giả định | Bước 3, **8 phút** trong kịch bản minh họa. Tốn thời gian nhất khi phải tìm xem mỗi tiêu chí có nội dung tương ứng ở đâu, chẳng hạn cả ba sơ đồ đã có số phút từng bước chưa. |
-| Impact cần kiểm | Một yêu cầu bị bỏ sót có thể khiến học viên phải mở lại bản nháp để rà và sửa thêm vòng nữa. Ghi số yêu cầu bị phát hiện sau vòng rà đầu. |
-| Success metric | Minh họa **15 → ≤ 9 phút/lần rà**. Bấm giờ từ lúc mở bản nháp đến lúc ghi xong danh sách cần sửa, chưa tính thời gian sửa. Dùng các bản có số mục tương đương và đối chiếu với rubric để kiểm tra số yêu cầu bị bỏ sót có tăng hay không. |
-| Phương án không dùng AI | Dùng checklist CP1–CP2 có cột tiêu chí, vị trí trong bài và trạng thái. |
-| Giả thuyết về AI | Nếu checklist vẫn để sót các yêu cầu viết bằng ngôn ngữ tự do, AI có thể gợi ý vị trí cần kiểm. Học viên đối chiếu lại với rubric. |
-| Cảm nhận nhanh | No AI. Thử checklist trước vì tiêu chí đã được nêu rõ. |
+| Job Story | Khi nhận góp ý cho bản nháp báo cáo từ cả nhóm chat và tài liệu, tôi muốn biết từng góp ý cần sửa ở đoạn nào, để phân công sửa một lượt và tránh bỏ sót. |
+| Actor | Thành viên phụ trách tổng hợp góp ý trước khi nhóm sửa báo cáo. |
+| Thời điểm / bối cảnh | Sau vòng đọc bản nháp, khi đã có khoảng 12 góp ý ở hai nguồn. |
+| Quy trình hiện tại cần xác nhận | Mở hai nguồn → chép góp ý vào một danh sách → đối chiếu từng góp ý với mục trong báo cáo → xử lý mục trùng hoặc chưa rõ → gửi danh sách để phân công. |
+| Bottleneck | **Bước 3 — đối chiếu góp ý với đoạn cần sửa (18 phút minh họa).** Người tổng hợp phải mở lại bản nháp khi góp ý chỉ ghi “sửa chỗ này” hoặc nhắc một đoạn không có tiêu đề. |
+| Impact | Một góp ý bị gắn sai mục có thể khiến thành viên sửa nhầm đoạn hoặc phải hỏi lại. Khi kiểm chứng, ghi số góp ý bị bỏ sót, gắn sai mục hoặc cần làm rõ. |
+| Success metric | Kịch bản minh họa **36 → ≤ 22 phút cho một lượt 12 góp ý**. Bấm giờ từ lúc mở nguồn đầu tiên đến khi gửi danh sách. Đối chiếu 12 góp ý gốc với đầu ra. Mỗi góp ý phải có mục đích đến hoặc trạng thái “cần làm rõ”. |
+| Phương án không dùng AI | Thống nhất nhận xét ngay cạnh đoạn cần sửa. Với góp ý trong chat, dùng mẫu gồm mục báo cáo, nội dung góp ý và link nguồn. |
+| Giả thuyết về AI | Nếu góp ý vẫn đến từ hai nguồn, AI có thể đề xuất nhóm theo mục từ văn bản đã được phép chia sẻ. Người tổng hợp mở nguồn và quyết định góp ý nào thực sự trùng. |
+| Cảm nhận nhanh | **No AI trước.** Thử chuẩn hóa cách để lại góp ý rồi đo lại thời gian đối chiếu. |
+
+**Quy trình nháp #1**
 
 ```text
-Mở bản nháp (1') → Tìm tiêu chí (4') → Đối chiếu nội dung (8', BƯỚC NGHẼN)
-→ Ghi danh sách cần sửa (2')
-Tổng minh họa: 15 phút/lần rà.
+KỊCH BẢN MINH HỌA — 36 phút cho 12 góp ý
+[1 Mở hai nguồn: 2'] → [2 Gom góp ý vào một bảng: 8']
+→ [3 Đối chiếu với mục báo cáo: 18'] ← NGHI NGHẼN
+→ [4 Xử lý trùng hoặc chưa rõ: 5'] → [5 Gửi danh sách: 3']
 ```
 
-### Problem Card #2 — Tái dựng thời gian từng bước để pitch
+### Problem Card #2 — Ghép các phần thành bản Markdown chung
 
 | Trường | Nội dung |
 |---|---|
-| Job Story | Khi chuẩn bị pitch một vấn đề, tôi muốn xác định bước nào làm chậm quy trình, để giải thích cho nhóm bằng số đo của lần gần nhất. |
-| Actor | Học viên đã thực hiện quy trình và đang chuẩn bị một Problem Card để pitch. |
-| Thời điểm / bối cảnh | Sau khi chọn vấn đề CP1, trước khi chốt sơ đồ hiện trạng ở CP2. |
-| Quy trình hiện tại cần xác nhận | Chọn lần xảy ra gần nhất → mở lại dấu vết → ghép các mốc vào từng bước → vẽ sơ đồ và đánh dấu bước nghi nghẽn. |
-| Bottleneck giả định | Bước 3, **9 phút** trong kịch bản minh họa. Một số bước có thể thiếu mốc kết thúc hoặc xen thời gian chờ, nên chỉ suy được khoảng thời gian. |
-| Impact cần kiểm | Nếu gán nhầm thời gian chờ vào bước làm, card có thể chỉ sai bước nghẽn và nhóm sẽ tập trung kiểm chứng sai chỗ. Kiểm lại xem bước được đánh dấu có thay đổi sau khi tách hai loại thời gian không. |
-| Success metric | Minh họa **17 → ≤ 10 phút/card**. Bấm giờ từ lúc chọn lần quan sát đến lúc vẽ xong sơ đồ. Với mỗi bước phải ghi nguồn số phút hoặc đánh dấu là ước lượng. So sánh các card có số bước tương đương. |
-| Phương án không dùng AI | Ghi giờ bắt đầu và kết thúc ngay khi thực hiện từng bước. Tách phút thao tác, phút chờ và phút làm lại. |
-| Giả thuyết về AI | Chưa có. Ưu tiên ghi thời gian ngay khi công việc diễn ra để giảm phần phải tái dựng. |
-| Cảm nhận nhanh | No AI. |
+| Job Story | Khi các thành viên đã gửi xong phần của mình, tôi muốn ghép chúng thành một bản có cấu trúc và liên kết đúng, để kịp gửi cả nhóm kiểm tra trước hạn. |
+| Actor | Thành viên phụ trách ghép báo cáo của nhóm. |
+| Thời điểm / bối cảnh | Sau khi cả ba phần nguồn đã được gửi, trước lượt đọc duyệt chung. |
+| Quy trình hiện tại cần xác nhận | Mở ba phần đã chốt → đưa nội dung vào đúng mục → chỉnh tiêu đề, bảng và đường dẫn → mở bản xem trước → gửi link để nhóm duyệt. |
+| Bottleneck | **Bước 3 — chỉnh cấu trúc và đường dẫn (15 phút minh họa).** Ảnh hoặc tài liệu đi kèm có thể đổi vị trí khi đưa sang file chung. |
+| Impact | Nhóm có thể mất thêm một lượt duyệt nếu thiếu mục hoặc có đường dẫn hỏng. Khi thử, ghi số lỗi bản xem trước phát hiện và số lần phải gửi lại. |
+| Success metric | Kịch bản minh họa **30 → ≤ 18 phút/lượt ghép ba phần**. Bấm giờ từ khi mở ba phần đã chốt đến lúc gửi link. Bản đạt khi đủ ba phần và mọi ảnh, liên kết nội bộ đều mở được. |
+| Phương án không dùng AI | Cho các thành viên viết theo cùng một mẫu Markdown, thống nhất vị trí lưu ảnh. Dùng bản xem trước và kiểm đường dẫn trước khi gửi. |
+| Giả thuyết về AI | Chưa cần. Có thể kiểm phần bắt buộc và liên kết nội bộ bằng quy tắc xác định. |
+| Cảm nhận nhanh | **Rule** cho bước dò liên kết và tiêu đề bắt buộc, sau khi nhóm thống nhất cấu trúc. |
+
+**Quy trình nháp #2**
 
 ```text
-Chọn lần quan sát (2') → Mở lại dấu vết (4') → Ghép mốc theo bước (9', BƯỚC NGHẼN)
-→ Vẽ sơ đồ và đánh dấu (2')
-Tổng minh họa: 17 phút/card.
+KỊCH BẢN MINH HỌA — 30 phút cho 3 phần đã chốt
+[1 Mở các phần: 3'] → [2 Đưa vào đúng mục: 5']
+→ [3 Chỉnh tiêu đề, bảng và đường dẫn: 15'] ← NGHI NGHẼN
+→ [4 Kiểm bản xem trước: 5'] → [5 Gửi link: 2']
 ```
 
-### Problem Card #3 — Xác định đúng repo và nơi nộp
+### Problem Card #3 — Tìm lại quyết định nhóm đã chốt
 
 | Trường | Nội dung |
 |---|---|
-| Job Story | Khi lần đầu chuẩn bị nộp bài Day 02, tôi muốn xác định đúng repo và nơi nộp, để gửi đúng đường dẫn trong lần đầu. |
-| Actor | Học viên lớp L3B chuẩn bị nộp báo cáo từ repo chung. |
-| Thời điểm / bối cảnh | Trước khi dán link lên LMS, khi đã có link repo nhóm để đối chiếu. |
-| Quy trình hiện tại cần xác nhận | Mở phần hướng dẫn nộp → đối chiếu link với repo nhóm và tên lớp → tìm mục Day 02 trên LMS → kiểm link trước khi gửi. |
-| Bottleneck giả định | Bước 2, **5 phút** trong kịch bản minh họa. Học viên phải phân biệt repo đề, repo nhóm và quy tắc đặt tên file cá nhân. |
-| Impact cần kiểm | Nhầm repo có thể dẫn tới gửi một link không chứa báo cáo của nhóm. Ghi số lần phải đổi link sau khi tự kiểm hoặc được nhắc. |
-| Success metric | Minh họa **11 → ≤ 5 phút/lần kiểm**. Bấm giờ từ lúc mở hướng dẫn đến lúc xác nhận đúng link và đúng mục Day 02, chỉ tính lượt đã có link repo nhóm. Mỗi lượt chỉ đạt khi cả link và mục nộp đều đúng. |
-| Phương án không dùng AI | Nhóm ghim link repo đã xác nhận và ghi tên mục nộp cạnh link. Học viên tự đối chiếu trước khi gửi. |
-| Giả thuyết về AI | Chưa có. Link và mục nộp có thể kiểm trực tiếp với nguồn chính thức của nhóm và lớp. |
-| Cảm nhận nhanh | No AI. |
+| Job Story | Khi chuẩn bị sửa báo cáo sau một buổi họp, tôi muốn tìm lại phương án nhóm đã chốt và lý do chọn, để tránh sửa theo một đề xuất đã bị loại. |
+| Actor | Thành viên được giao sửa một mục báo cáo sau họp. |
+| Thời điểm / bối cảnh | Bắt đầu sửa một mục khi nhóm từng trao đổi nhiều phương án cho mục đó. |
+| Quy trình hiện tại cần xác nhận | Xác định mục đang sửa → tìm từ khóa trong chat và ghi chú họp → đọc ngữ cảnh để phân biệt đề xuất và quyết định → lưu đoạn chốt cùng link nguồn. |
+| Bottleneck | **Bước 3 — đọc ngữ cảnh và xác định quyết định cuối (9 phút minh họa).** Kết quả tìm kiếm có thể chứa cả các phương án đã bị loại. |
+| Impact | Dùng nhầm phương án có thể dẫn đến sửa lại cùng một mục. Khi thử, ghi số lần chọn nhầm và số lượt phải hỏi lại nhóm. |
+| Success metric | Kịch bản minh họa **18 → ≤ 8 phút/quyết định**. Bấm giờ từ lúc xác định mục đến lúc lưu được phương án đã chốt và link nguồn. Với trường hợp chưa có dấu vết chốt, ghi “cần xác nhận” và đếm riêng. |
+| Phương án không dùng AI | Sau họp, lưu một dòng gồm mục, quyết định, lý do và link nguồn. Người sửa tra theo tên mục. |
+| Giả thuyết về AI | Nếu cần tra nhiều cuộc họp cũ, AI có thể gợi ý đoạn liên quan từ ghi chú đã được phép chia sẻ. Người sửa đọc nguồn để xác nhận phương án cuối. |
+| Cảm nhận nhanh | **No AI trước.** Thử ghi quyết định ngay sau họp để giảm việc truy lại sau đó. |
+
+**Quy trình nháp #3**
 
 ```text
-Mở hướng dẫn (2') → Đối chiếu repo và lớp (5', BƯỚC NGHẼN)
-→ Tìm mục Day 02 (3') → Kiểm link (1')
-Tổng minh họa: 11 phút/lần kiểm.
+KỊCH BẢN MINH HỌA — 18 phút để tìm 1 quyết định
+[1 Xác định mục: 2'] → [2 Tìm trong chat và ghi chú: 5']
+→ [3 Đọc ngữ cảnh và xác định quyết định cuối: 9'] ← NGHI NGHẼN
+→ [4 Lưu phương án và link nguồn: 2']
 ```
 
 ### Card muốn pitch nhất
 
-- **Đề xuất chọn Card #1.** Có thể thử ngay trên bản nháp, dùng rubric làm chuẩn và đo cả thời gian lẫn số tiêu chí bị bỏ sót.
-- **Câu hỏi muốn nhóm phản biện:** Trong lần rà gần nhất, bạn mất nhiều phút hơn ở bước tìm yêu cầu hay bước đối chiếu yêu cầu với nội dung? Có mốc nào giúp tách hai bước đó?
+- **Đề xuất Card #1.** Có thể lấy một vòng góp ý làm mẫu, đếm từng góp ý từ lúc gom đến lúc đưa vào danh sách sửa.
+- **Câu hỏi muốn nhóm phản biện:** Trong vòng góp ý gần nhất, mất nhiều thời gian hơn ở bước tìm đủ góp ý hay ở bước xác định góp ý đó thuộc đoạn nào? Có thể chỉ ra một góp ý cụ thể không?
 
-### AI đã phản biện card thế nào
+### Nhật ký AI phản biện
 
-Đây là các điểm Codex nêu khi rà bản nháp và thay đổi đã đưa vào file. Học viên bổ sung nhận định của mình sau khi xem lại.
-
-| Card | Điểm yếu AI chỉ ra | Thay đổi trong bản nháp |
+| Card | Điểm yếu AI chỉ ra | Đã sửa trong bản nháp |
 |---|---|---|
-| #1 | Chỉ đo thời gian có thể thưởng cho việc rà qua loa. | Thêm điều kiện số yêu cầu bị bỏ sót không tăng và tách thời gian rà khỏi thời gian sửa. |
-| #2 | Cộng thời gian chờ vào thao tác có thể làm đảo thứ tự bước nghẽn. | Tách ba loại thời gian và yêu cầu ghi nguồn hoặc đánh dấu ước lượng cho từng bước. |
-| #3 | Nếu chưa có link nhóm, thời gian chờ người gửi link sẽ lấn át thời gian kiểm. | Giới hạn phép đo cho lượt đã nhận link và xác nhận cả link lẫn mục nộp. |
+| #1 — Gom góp ý | Đo nhanh hơn có thể che việc gộp nhầm hai góp ý khác nhau. | Thêm điều kiện truy được từng góp ý gốc và giữ trạng thái “cần làm rõ” cho trường hợp mơ hồ. |
+| #2 — Ghép Markdown | Nếu tính thời gian chờ thành viên gửi bài thì phép đo không còn cho thấy chi phí của bước ghép. | Bắt đầu đo sau khi đã nhận đủ ba phần. Thêm kiểm tra ảnh và liên kết sau khi ghép. |
+| #3 — Tìm quyết định | Lượt tìm không thể kết thúc bằng quyết định có nguồn nếu nhóm chưa từng ghi lại việc chốt. | Tách lượt chưa có dấu vết chốt và ghi “cần xác nhận” thay vì suy ra phương án cuối. |
 
-### Tài liệu hướng dẫn
+### Tài liệu tham khảo
 
-- [Worksheet](../../docs/01-worksheet.md)
-- [Quy định sử dụng AI](../../RULES.md)
+- [Worksheet CP1–CP2](../../docs/01-worksheet.md)
 - [Rubric](../../RUBRIC.md)
+- [Bài của Vương Quang Thắng, tham khảo bố cục CP1–CP2](2A202603855_VuongQuangThang.md)
