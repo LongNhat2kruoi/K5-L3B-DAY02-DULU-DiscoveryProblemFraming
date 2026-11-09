@@ -351,8 +351,33 @@ Vì sao:
 
 ## 9. Hạn chế và hướng tiếp theo
 
--
+- **Chưa có kiểm chứng người dùng ngoài nhóm:** Nhóm mới có self-report của một thành viên và đối chiếu tài liệu repository. Các interview snapshot/kịch bản giả lập không được xem là bằng chứng thật.
+- **Baseline chưa được đo lặp lại:** Mốc khoảng 30 phút/bài mới là tổng thời gian ban đầu; nhóm chưa tách và bấm giờ độc lập cho từng bước trong nhiều assignment.
+- **Bottleneck chưa được xác nhận đầy đủ:** Bước đối chiếu nội dung với rubric được đặt làm bottleneck giả thuyết, nhưng có thể thời gian lớn lại nằm ở chờ bàn giao, sửa nội dung hoặc kiểm tra link.
+- **Chưa chạy pilot:** `Markdownlint`, `Lychee` và quy trình AI warning report chưa được cài đặt hoặc chạy trên repository thực tế của nhóm.
+- **Chất lượng AI chưa có bộ eval đầy đủ:** Ba tiêu chí hiện tại mới kiểm tra không bịa yêu cầu, hạn chế bỏ sót và tính hành động; chưa có 10 cặp input/output thực tế để đánh giá độ ổn định.
+- **Rủi ro quyền truy cập và liêm chính học thuật:** Không được đưa thông tin đăng nhập hoặc tự động sửa/push/nộp bài. Mọi cảnh báo của AI phải được sinh viên mở nguồn và xác nhận.
+
+**Hướng tiếp theo:**
+
+1. Xác nhận lại candidate, điểm shortlist và câu hỏi phản biện với toàn bộ thành viên trong buổi pitch.
+2. Phỏng vấn 2–3 người ngoài nhóm hoặc thực hiện survey 5–10 người về lần review assignment gần nhất.
+3. Bấm giờ từng bước trên ít nhất 2–3 assignment có độ phức tạp tương đương; tách thời gian review khỏi thời gian chờ và sửa bài.
+4. Tạo checklist có các cột `Requirement`, `Source`, `File/Section`, `Status` và `Reviewer` trước khi dùng AI.
+5. Chạy thử `Markdownlint` và `Lychee` trên một repository mẫu, ghi false positive, link bỏ sót và thời gian kiểm tra.
+6. Xây dựng bộ eval tối thiểu 10 cặp input/output cho warning report, chấm theo các tiêu chí CP6.
+7. Pilot `Workflow` trên một assignment; nếu AI báo sai quá 5 phút để xác minh hoặc bỏ sót mục bắt buộc làm bài bị trừ điểm, dừng pilot và quay về checklist thủ công (`No AI`).
 
 ## 10. Tài liệu tham khảo
 
--
+- `README.md` — K5 · L3 · Day 02 — Discovery & Problem Framing.
+- `RULES.md` — Quy định sử dụng AI, kiểm chứng người dùng, liêm chính và bảo mật dữ liệu.
+- `CHECKPOINTS.md` — Mục tiêu, sản phẩm và tiêu chí tự kiểm của CP0–CP7.
+- `RUBRIC.md` — Rubric chấm điểm cá nhân, nhóm và bonus.
+- `SUBMISSION.md` — Cấu trúc repository, quy tắc đặt tên và checklist nộp bài.
+- `docs/01-worksheet.md` — Hướng dẫn chi tiết cho từng checkpoint.
+- `docs/02-deliverable-example.md` — Bài làm mẫu tham khảo.
+- `docs/03-international-frameworks.md` — Các framework quốc tế được sử dụng trong lab.
+- GitHub Docs — [About tasklists](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/about-tasklists).
+- Markdownlint — [Repository chính thức](https://github.com/markdownlint/markdownlint).
+- Lychee — [Repository chính thức](https://github.com/lycheeverse/lychee).
