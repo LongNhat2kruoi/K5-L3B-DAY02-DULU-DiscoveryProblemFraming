@@ -14,7 +14,7 @@
 |---:|---|---|---|---|
 | 1 | Nguyễn Mạnh Hùng | 2A202603852 | Chưa xác nhận | Chưa xác nhận |
 | 2 | Vương Quang Thắng | 2A202603855 | Chưa xác nhận | Chưa xác nhận |
-| 3 | Ngô Duy Khánh | 2A202603870 | Chưa xác nhận | Chưa xác nhận |
+| 3 | Ngô Duy Khánh | 2A202603870 | Phụ trách CP4 — chuẩn bị kiểm chứng và research; báo cáo cá nhân CP1, CP2, CP7 | dkhanhdev |
 | 4 | Lê Sỹ Long Nhật | 2A202603881 | Phụ trách chính CP3 — Hội tụ nhóm | LongNhat2kruoi |
 
 Không ghi email hay số điện thoại vào bảng này, vì repo có thể để public.
@@ -26,14 +26,42 @@ Gợi ý vai trò (một người có thể giữ nhiều vai): điều phối t
 | Checkpoint | Người chính | Người hỗ trợ | Sản phẩm |
 |---|---|---|---|
 | CP3 — Hội tụ nhóm | Lê Sỹ Long Nhật | Cả nhóm — cần xác nhận | Cluster, cây OST, bảng chấm điểm |
-| CP4 — Kiểm chứng | Chưa phân công | Chưa phân công | Assumption map, snapshot hoặc survey |
-| CP4 — Research | Chưa phân công | Chưa phân công | Bảng research có link |
+| CP4 — Kiểm chứng | Ngô Duy Khánh | Cả nhóm — cần xác nhận | Assumption map, bộ câu hỏi, snapshot và tình huống tham khảo; chưa có phỏng vấn/survey thật |
+| CP4 — Research | Ngô Duy Khánh | Chưa xác nhận | Bảng research 3 giải pháp có link nguồn chính thức, khoảng trống và bài học |
 | CP5 — Quy trình trước/sau | Chưa phân công | Chưa phân công | Quy trình + bảng before/after |
 | CP5 — Problem Statement v0 | Chưa phân công | Chưa phân công | Problem Statement v0 |
 | CP6 — Mức can thiệp + Problem Statement v1 | Chưa phân công | Chưa phân công | Ma trận, AI Canvas, eval, Problem Statement v1 |
 | CP6 — Quyết định | Chưa phân công | Chưa phân công | 4 rủi ro + Go/Not Yet/No-Go |
 
 ## Cá nhân
+
+### NgoDuyKhanh-2A202603870
+
+**Phần việc phụ trách:**
+
+- Báo cáo cá nhân CP1 — Scan problem, CP2 — Top 3 Problem Cards và quy trình nháp, CP7 — Tổng hợp đóng góp, nhật ký dùng AI và reflection tham khảo.
+- Phụ trách CP4 — Chuẩn bị kiểm chứng và research cho candidate kiểm tra repository trước khi nộp bài lab GitHub.
+
+**Đóng góp cụ thể** (nội dung được chuẩn bị với hỗ trợ của Codex):
+
+- Chuẩn bị bản scan 6 problem và 3 Problem Cards về gom góp ý, ghép báo cáo Markdown và tìm lại quyết định nhóm; ghi rõ số liệu minh họa cần kiểm chứng.
+- Xây dựng assumption map gồm 6 giả định, chấm mức quan trọng và bằng chứng, ưu tiên kiểm chứng nhu cầu, baseline và bottleneck.
+- Chuẩn bị 6 câu hỏi theo hành vi đã xảy ra, một snapshot tham khảo TH1 và 3 tình huống giả lập TH1–TH3. Đây là tài liệu chuẩn bị, chưa phải kết quả phỏng vấn/survey thật.
+- Tổng hợp research về checklist GitHub, Markdownlint và Lychee; nêu bước được hỗ trợ, giới hạn và bài học cho nhóm.
+- Tổng hợp CP7 từ quá trình làm bài và nội dung CP3–CP6; lưu phần CP4 và CP7 lên nhánh `ngo-duy-khanh`.
+
+**Bằng chứng:**
+
+- [Báo cáo cá nhân — mục 2–6](report/individual/2A202603870_NgoDuyKhanh.md).
+- [Báo cáo nhóm — mục 3, CP4](report/team/group_report.md#3-kiểm-chứng--research-giải-pháp-đã-có-cp4).
+- Commit CP4: [6695378](https://github.com/LongNhat2kruoi/K5-L3B-DAY02-DULU-DiscoveryProblemFraming/commit/6695378).
+- Commit CP7 và nhật ký đóng góp: [69e2df8](https://github.com/LongNhat2kruoi/K5-L3B-DAY02-DULU-DiscoveryProblemFraming/commit/69e2df8).
+
+**Điều rút ra trong bản tổng hợp CP7 (cần cá nhân xác nhận):**
+
+- Phân biệt giả định, số liệu minh họa và bằng chứng thật; không dùng tình huống giả lập thay phỏng vấn.
+- Tách thời gian review khỏi thời gian chờ hoặc sửa bài để so sánh trước/sau công bằng.
+- Đánh giá checklist/Rule trước khi khẳng định lợi ích bổ sung của Workflow; người review phải xác nhận cảnh báo theo tài liệu gốc.
 
 Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `HoVaTen-MSSV`.
 
