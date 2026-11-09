@@ -254,38 +254,40 @@ Phản biện nhận được (từ AI hoặc nhóm khác) và nhóm có đồng
 
 ### 6.1. Ma trận độ mơ hồ × độ phức tạp
 
-Bài của nhóm nằm ở ô:
+Bài của nhóm nằm ở ô: **Độ mơ hồ trung bình × Độ phức tạp trung bình.**
 
-Vì sao:
+Vì sao: 
+- **Độ mơ hồ trung bình:** Tiêu chí trong Rubric được định nghĩa rất rõ ràng, tuy nhiên cách sinh viên hành văn, trình bày báo cáo lại đa dạng (nhiều biến thể ngôn ngữ tự nhiên).
+- **Độ phức tạp trung bình:** Đầu vào bao gồm nhiều file (Rubric, Báo cáo cá nhân, Báo cáo nhóm, TEAM.md). Cần đối chiếu chéo các file này với nhau nhưng các bước thực hiện mang tính tuần tự, không có rẽ nhánh logic phức tạp.
 
 ### 6.2. So sánh 4 mức
 
 | Mức | Phương án cho bài của nhóm | Đủ khi nào | Rủi ro | Chọn? |
 |---|---|---|---|---|
-| **No AI** (sửa quy trình) | | | | |
-| **Rule** | | | | |
-| **Workflow** | | | | |
-| **Agent** | | | | |
+| **No AI** (sửa quy trình) | Dùng checklist Markdown gán tag người phụ trách trên GitHub. | Sinh viên cẩn thận và có dư dả thời gian rà soát trước deadline. | Vẫn tốn 15 phút rà soát thủ công, dễ mỏi mắt và bỏ sót do tâm lý gấp gáp. | Không |
+| **Rule** | Dùng script (vd: Markdownlint, Lychee) check tên file, thư mục và test link. | Chỉ cần kiểm tra cấu trúc vỏ bọc bên ngoài. | Không thể đọc hiểu nội dung báo cáo để biết bài làm đã đáp ứng yêu cầu của Rubric hay chưa. | Dùng cho bước 1 & 4 |
+| **Workflow** | Rule quét cấu trúc/link → AI đọc báo cáo đối chiếu Rubric sinh report → SV tự sửa và nộp. | Cần đánh giá độ sâu của văn bản nhưng vẫn bắt buộc phải có sự kiểm soát của con người. | AI có thể bịa lỗi (hallucinate) hoặc hiểu sai Rubric. | **Chọn** |
+| **Agent** | AI tự động quét repo, tự sửa nội dung thiếu, tự commit và push. | Khi người dùng hoàn toàn tin tưởng máy móc thay mình làm bài. | Vi phạm liêm chính học thuật (Academic Integrity) và rủi ro sửa sai ý tưởng gốc. | Không |
 
-**Mức chọn:**
+**Mức chọn:** **Workflow** (Kết hợp Rule và AI hỗ trợ 1 bước).
 
-**Vì sao không chọn mức đơn giản hơn:**
+**Vì sao không chọn mức đơn giản hơn:** Các mức No AI hay Rule không thể giải quyết được Bottleneck cốt lõi (15 phút tốn não nhất) là đọc hiểu ngữ nghĩa nội dung báo cáo xem đã chạm được mốc điểm của Rubric hay chưa.
 
 ### 6.3. AI Canvas rút gọn
 
 | Thành phần | Nội dung |
 |---|---|
-| **Prediction** — AI dự đoán / tạo ra gì? | |
-| **Judgment** — con người cân nhắc, quyết định gì? | |
-| **Action** — hành động cuối cùng là gì, ai làm? | |
-| **Outcome** — đo kết quả bằng gì? | |
-| **Input** — AI cần dữ liệu đầu vào gì mỗi lần chạy? Có sẵn không? | |
-| **Feedback** — lấy phản hồi ở đâu để cải thiện? | |
+| **Prediction** — AI dự đoán / tạo ra gì? | Bản báo cáo (Warning Report) chỉ ra các mục bị thiếu, chưa đạt yêu cầu Rubric hoặc sai định dạng. |
+| **Judgment** — con người cân nhắc, quyết định gì? | Sinh viên đọc Warning Report, xác nhận xem lỗi AI báo là đúng hay sai (AI bịa lỗi). |
+| **Action** — hành động cuối cùng là gì, ai làm? | Sinh viên tự chỉnh sửa lại nội dung file Markdown cho đúng rồi tiến hành commit & nộp bài. |
+| **Outcome** — đo kết quả bằng gì? | Thời gian rà soát giảm (< 15 phút); Điểm số bài lab không bị trừ oan do lỗi format/thiếu mục. |
+| **Input** — AI cần dữ liệu đầu vào gì mỗi lần chạy? Có sẵn không? | File `RUBRIC.md`, `CHECKPOINTS.md`, báo cáo cá nhân, báo cáo nhóm. Đều có sẵn 100% trong repo. |
+| **Feedback** — lấy phản hồi ở đâu để cải thiện? | Những dòng cảnh báo sinh viên bỏ qua (ignore) vì AI báo nhầm; log sửa lỗi của sinh viên. |
 
 ### 6.4. Hai câu hỏi của Google PAIR
 
-- Người dùng muốn **được hỗ trợ (augment)** hay **giao hẳn việc (automate)**? Bằng chứng:
-- AI sai kiểu nào tệ hơn, **báo nhầm** hay **bỏ sót**? Vì sao, và thiết kế đã xử lý thế nào:
+- Người dùng muốn **được hỗ trợ (augment)** hay **giao hẳn việc (automate)**? Bằng chứng: Sinh viên muốn **được hỗ trợ (augment)**. Dữ liệu từ kịch bản CP4 cho thấy người dùng cần "người nhắc tuồng" để không bị sót ý, nhưng họ phải là người tự tay sửa nội dung để bảo vệ tính nguyên bản và điểm số.
+- AI sai kiểu nào tệ hơn, **báo nhầm** hay **bỏ sót**? Vì sao, và thiết kế đã xử lý thế nào: **Bỏ sót tệ hơn báo nhầm**. Bỏ sót mục sẽ khiến sinh viên bị trừ điểm nặng. Báo nhầm (bảo thiếu nhưng thực ra đã viết) thì sinh viên chỉ tốn vài giây xác nhận và phớt lờ cảnh báo. *Xử lý:* Thiết kế prompt khắt khe, thà cảnh báo dư thừa còn hơn bỏ qua các mục mơ hồ.
 
 ---
 
@@ -293,29 +295,31 @@ Vì sao:
 
 | Trường | Nội dung |
 |---|---|
-| **Actor** | |
-| **Quy trình** | |
-| **Bottleneck** | |
-| **Impact** | |
-| **Success Metric** (baseline → target, cách đo) | |
-| **Boundary** | |
-| **AI intervention point** | |
-| **Mức chọn** | No AI / Rule / Workflow / Agent |
-| **Rủi ro & người kiểm tra** | |
+| **Actor** | Người phụ trách review nộp bài lab GitHub trong nhóm |
+| **Quy trình** | Chạy script check cấu trúc/link → Dùng AI đối chiếu nội dung với Rubric → Sinh viên đọc report của AI, sửa file → Kiểm tra lại → Commit và nộp. |
+| **Bottleneck** | Sinh viên phải tốn công đọc report của AI và tự tay sửa lại các phần nội dung bị thiếu/lệch chuẩn. |
+| **Impact** | Rút ngắn thời gian chốt bài trước deadline, giảm áp lực, triệt tiêu lỗi mất điểm vặt. |
+| **Success Metric** (baseline → target, cách đo) | Thời gian review giảm từ 30' xuống dưới 15'. Bài nộp không bị trừ điểm ở các tiêu chí định dạng/cấu trúc (đo bằng điểm thật từ Coach). |
+| **Boundary** | AI không được tự sinh văn bản vào báo cáo gốc. Không tự động push code. Mọi hành động chỉnh sửa bài đều phải do con người làm. |
+| **AI intervention point** | Sau bước check cấu trúc (Rule) và trước bước chỉnh sửa nội dung cuối cùng của người review. |
+| **Mức chọn** | Workflow |
+| **Rủi ro & người kiểm tra** | Rủi ro AI bịa lỗi (Hallucination). Người kiểm tra: Sinh viên review đối chiếu trực tiếp cảnh báo với file Rubric gốc. |
 
 **Thay đổi so với v0 và lý do:**
 
 | Trường | v0 | v1 | Vì sao đổi |
 |---|---|---|---|
-| | | | |
+| AI intervention point & Mức chọn | Chưa xác định | Sau khi Rule check cấu trúc, dùng mức Workflow. | Đã phân tích đủ 4 mức và thấy AI chỉ nên đóng vai trò Auditor (kiểm toán) nội dung. |
+| Rủi ro & Boundary | Chỉ nói chung chung. | Thêm rủi ro Hallucination, AI bị cấm tự sinh văn bản sửa bài. | Đảm bảo nguyên tắc liêm chính học thuật (không làm hộ bài). |
+| Success Metric | Chỉ đo thời gian. | Thêm mục tiêu "Không bị trừ điểm hình thức/định dạng". | Tiết kiệm thời gian vô nghĩa nếu bài nộp vẫn bị điểm kém. Phải đo cả chất lượng. |
 
 **Tiêu chí đánh giá đầu ra của AI (3–5 tiêu chí):**
 
 | # | Tiêu chí | Đạt khi | Không đạt khi |
 |---:|---|---|---|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
+| 1 | Đúng luật (No Hallucination) | Chỉ cảnh báo dựa trên các gạch đầu dòng có thật trong `RUBRIC.md` và `SUBMISSION.md`. | Bịa ra các yêu cầu vô lý (vd: "Phải có 3 hình ảnh", dù Rubric không bắt buộc). |
+| 2 | Độ nhạy (Tránh bỏ sót) | Nhận diện và cảnh báo đúng 100% các mục bị bỏ trống (để template) hoặc sai cấu trúc. | Đánh giá "Đạt" cho một mục mà người dùng chỉ viết placeholder (vd: "đang cập nhật"). |
+| 3 | Tính hành động (Actionable) | Chỉ rõ được file nào đang gặp lỗi và thuộc tiêu chí thứ mấy trong Rubric. | Đưa ra lời khuyên chung chung (vd: "Bài viết cần chi tiết hơn"). |
 
 ---
 
@@ -325,26 +329,25 @@ Vì sao:
 
 | Rủi ro | Câu hỏi | Mức độ rủi ro (Thấp = an toàn / TB / Cao = nguy hiểm) | Lý do / bằng chứng |
 |---|---|---|---|
-| **Value** | Người dùng có thật sự cần và sẽ dùng không? | | |
-| **Usability** | Người dùng có dùng được, có hiểu và sửa được đầu ra của AI không? | | |
-| **Feasibility** | Có đủ dữ liệu, công cụ, kỹ năng để làm không? | | |
-| **Viability** | Có hợp chi phí, pháp lý, quy định tổ chức không? Ai vận hành? | | |
+| **Value** | Người dùng có thật sự cần và sẽ dùng không? | Trung bình | Giả định pain 30 phút vẫn cần thêm phỏng vấn thực tế ở CP4 để chốt hạ. |
+| **Usability** | Người dùng có dùng được, có hiểu và sửa được đầu ra của AI không? | Thấp (An toàn) | Output là text cảnh báo lỗi; sinh viên IT dư sức đọc, hiểu và tự sửa file Markdown. |
+| **Feasibility** | Có đủ dữ liệu, công cụ, kỹ năng để làm không? | Thấp (An toàn) | Dữ liệu đầu vào (Markdown) 100% dạng text, LLM xử lý rất tốt. Đã có tool check link (Lychee). |
+| **Viability** | Có hợp chi phí, pháp lý, quy định tổ chức không? Ai vận hành? | Thấp (An toàn) | Dùng bản free của AI bằng cách copy-paste là đủ, chi phí 0đ, không vi phạm rule học thuật. |
 
 ### 8.2. Kết luận
 
-**Quyết định:** Go / Not Yet / No-Go
+**Quyết định:** Go, phạm vi nhỏ (Pilot).
 
-**Lý do:**
+**Lý do:** Không có rủi ro mức Cao. Ba rủi ro nằm ở mức Thấp (An toàn), riêng rủi ro Value (Trung bình) có thể kiểm chứng được ngay trong pilot. Giải pháp không đòi hỏi tích hợp phức tạp, có thể dùng copy-paste prompt.
 
-**Nếu Go — pilot nhỏ nhất:**
+**Nếu Go — pilot nhỏ nhất (1 assignment):**
+- Không cần code tool tự động. Người review dùng một prompt chuẩn chứa Rubric và Checklist, copy-paste toàn bộ nội dung file Markdown vào ChatGPT/Gemini.
+- Bấm giờ tổng thời gian review (từ lúc bắt đầu đến lúc sửa xong lỗi AI báo).
+- Đối chiếu chéo: Xem AI có phát hiện đúng mục bị thiếu/lệch chuẩn so với người dò thủ công hay không.
 
-**Nếu Not Yet — cần kiểm chứng gì trước:**
-
-**Nếu No-Go — nên làm gì thay AI:**
-
-**Ngưỡng dừng** (nếu sau … mà … thì quay về …):
-
----
+**Ngưỡng dừng:**
+- Nếu AI liên tục báo sai (hallucinate) khiến người review mất trên 5 phút tranh cãi hoặc check lại với file gốc → dừng pilot, quay về dùng checklist thủ công (No AI).
+- Nếu AI bỏ sót mục bắt buộc khiến bài nộp bị trừ điểm format → No-Go, giải pháp không an toàn, dừng lập tức. 
 
 ## 9. Hạn chế và hướng tiếp theo
 
