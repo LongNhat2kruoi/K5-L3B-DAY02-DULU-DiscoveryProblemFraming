@@ -30,8 +30,8 @@ Gợi ý vai trò (một người có thể giữ nhiều vai): điều phối t
 | CP4 — Research | Ngô Duy Khánh | Chưa xác nhận | Bảng research 3 giải pháp có link nguồn chính thức, khoảng trống và bài học |
 | CP5 — Quy trình trước/sau | Nguyễn Mạnh Hùng | Cả nhóm - cần xác nhận | Quy trình + bảng before/after |
 | CP5 — Problem Statement v0 | Nguyễn Mạnh Hùng | Cả nhóm - cần xác nhận | Problem Statement v0 |
-| CP6 — Mức can thiệp + Problem Statement v1 | Chưa phân công | Chưa phân công | Ma trận, AI Canvas, eval, Problem Statement v1 |
-| CP6 — Quyết định | Chưa phân công | Chưa phân công | 4 rủi ro + Go/Not Yet/No-Go |
+| CP6 — Mức can thiệp + Problem Statement v1 | Vương Quang Thắng | Cả nhóm - cần xác nhận | Ma trận, AI Canvas, eval, Problem Statement v1 |
+| CP6 — Quyết định | Vương Quang Thắng | Cả nhóm - cần xác nhận | 4 rủi ro + Go/Not Yet/No-Go |
 
 ## Cá nhân
 
@@ -117,3 +117,24 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 - Nhận ra sự quan trọng của việc phải "chẻ nhỏ" quy trình thay vì gộp chung thời gian, nếu không sẽ rất dễ xác định sai điểm nghẽn (bottleneck).
 - Hiểu sâu hơn về vai trò của Boundary và HITL (Human-in-the-loop) để phòng ngừa rủi ro AI bịa lỗi (hallucinate) hoặc tự ý hành động ngoài tầm kiểm soát.
 - Nắm vững hơn luồng làm việc thực tế với Git khi làm việc nhóm (cách kéo code bằng pull/rebase để đồng bộ trước khi push).
+
+
+### VuongQuangThang-2A202603855
+
+**Phần việc phụ trách:**
+- Chuẩn bị Candidate mảng truyền thông sự kiện (CP1, CP2).
+- Đánh giá mức can thiệp AI, trả lời câu hỏi Google PAIR (CP6).
+- Viết Problem Statement v1, Tiêu chí đánh giá, đánh giá 4 rủi ro và ra quyết định cuối cùng (CP6).
+
+**Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
+- Pitch 3 thẻ bài cá nhân (CP1, CP2).
+- Trực tiếp soạn thảo nội dung mục 6 (Mức can thiệp AI), mục 7 (Problem Statement v1) và mục 8 (Quyết định) trong báo cáo nhóm.
+- Đưa ra 3 tiêu chí đánh giá AI (Đúng luật, Độ nhạy, Tính hành động) và thiết lập Ngưỡng dừng (Stopping threshold) rõ ràng để bảo vệ nhóm khỏi rủi ro AI hallucination.
+
+**Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
+- Báo cáo cá nhân: file `report/individual/[MSSV]_VuongQuangThang.md` (mục 2, 3, 4, 5, 6).
+- Báo cáo nhóm: file `report/team/group_report.md` (trực tiếp viết Mục 6, 7, 8).
+- Lịch sử commit trên Github do tài khoản `vuongquangthang` thực hiện.
+
+**Điều mình học được từ phần nhóm:**
+- Do chỉ đảm nhận CP6, tôi nhận ra tầm quan trọng của việc hiểu rõ luồng quy trình hiện tại (CP5 do bạn khác làm) trước khi quyết định "cắm" AI vào đâu. Tôi học được cách biện luận sắc bén khi so sánh 4 mức độ can thiệp, hiểu rằng không phải cứ dùng AI mức cao (Agent) là tốt, mà phải chọn mức Workflow phù hợp nhất để cân bằng giữa hiệu suất và sự an toàn.

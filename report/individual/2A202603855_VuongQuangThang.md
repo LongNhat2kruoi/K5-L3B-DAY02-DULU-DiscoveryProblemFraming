@@ -97,3 +97,36 @@ HIỆN TẠI — 80-90 phút
 | **#1: Phân loại form** | AI có thể không hiểu các thuật ngữ chuyên ngành hoặc slang (từ lóng) của sinh viên trong form, dẫn đến tag sai. | Đồng ý | Bổ sung phương án kiểm duyệt vào quy trình tương lai (boundary): AI chỉ gán tag nháp, con người bắt buộc duyệt qua bảng tag. |
 | **#2: Đóng gói bài viết** | Bài content do AI sinh ra thường có văn phong khuôn mẫu, đọc giống robot, làm giảm tương tác tự nhiên. | Đồng ý một phần | Chấp nhận AI chỉ viết "nháp", đổi mục tiêu từ "AI tự đăng" sang "AI sinh draft 3 kênh, người viết thổi hồn và gửi duyệt". |
 | **#3: Seeding group** | Đề xuất dùng "Agent AI tự động đăng bài lên group" là rất khó khả thi (Feasibility) vì Facebook có cơ chế block bot và thay đổi giao diện liên tục. | Đồng ý hoàn toàn | Ghi rõ giới hạn: Chỉ dùng AI để tự sinh 15 phiên bản text (biến thể) sẵn trong Google Docs. Việc đi copy-paste và bấm đăng vẫn do con người làm. |
+
+
+## 4. Tôi đã tham gia phần nào (CP7)
+
+| Hoạt động | Tôi đã làm gì? | Kết quả / Bằng chứng |
+|---|---|---|
+| Pitch Problem Card | Pitch 3 thẻ bài liên quan đến Truyền thông sự kiện. | Thẻ bài "Rà soát repository trước khi nộp bài" của Nhật được nhóm thống nhất chọn làm bài toán chốt. |
+| Gom nhóm (Cluster) & Chấm điểm | Tham gia phân tích 12 candidate để gom thành 3 cụm chính; chấm điểm và rút gọn shortlist. | Bảng Cluster và bảng chấm điểm trong `group_report.md` (mục 2.2 và 2.4). |
+| Viết Problem Statement v1 (CP6) | Phụ trách viết Success Metric (thêm tiêu chí chất lượng), chỉ định AI Intervention Point và viết 3 tiêu chí đánh giá AI (Eval). | Mục 7 trong `group_report.md`. |
+| Mức can thiệp AI & Quyết định (CP6) | Phân tích ma trận Mơ hồ x Phức tạp, chọn mức Workflow thay vì Agent; đánh giá 4 rủi ro và viết kết luận Go (Pilot). | Mục 6 và 8 trong `group_report.md`. |
+| Nhận phản biện | Bị chất vấn: "Thiết kế mức Workflow có rủi ro AI báo sai (hallucinate) làm tốn thời gian hơn không?" | Tôi đồng ý và đã thiết lập Ngưỡng dừng rõ ràng: Nếu AI báo sai khiến người dùng mất hơn 5 phút tranh cãi → Dừng pilot ngay lập tức. |
+
+
+
+## 5. Dùng AI (CP7)
+
+| Checkpoint | Dùng AI để làm gì? | AI giúp ích ở đâu? | Sai/hời hợt ở đâu? | Tôi đã sửa gì? |
+|---|---|---|---|---|
+| CP1, CP2 (Cá nhân) | Gợi ý ý tưởng bài toán Truyền thông và đóng vai PM phản biện 3 thẻ bài nháp. | Chỉ ra rủi ro feasibility khi muốn AI tự động seeding group Facebook. | Gợi ý giải pháp "Agent AI tự đăng bài", vi phạm nguyên tắc "chỉ chọn AI khi workflow không đủ". | Bỏ qua gợi ý Agent, giữ đúng yêu cầu thiết kế quy trình rõ ràng. |
+| CP6 (Phần Nhóm) | Hỗ trợ phân tích AI Canvas và 2 câu hỏi của Google PAIR. | Giúp làm rõ rủi ro "Bỏ sót tệ hơn báo nhầm" trong việc chấm điểm rubric. | Đề xuất để AI tự động push code sau khi dò lỗi xong. | Gạt bỏ đề xuất này vì vi phạm liêm chính học thuật. Tôi tự viết Boundary yêu cầu con người duyệt từng lỗi (Augment). |
+
+
+
+## 6. Reflection cá nhân (CP7)
+
+### 6.1. Bài toán ban đầu của tôi đã tiến hóa thế nào sau khi trao đổi nhóm?
+Ban đầu, tôi mang đến các thẻ bài mảng truyền thông sự kiện (như phân loại form đăng ký). Tuy nhiên, khi ráp nối cùng nhóm, bài toán "Rà soát repository trước deadline nộp lab" được chọn vì nó là nỗi đau chung trực tiếp mà cả nhóm vừa trải qua. Tôi đã phải gác lại ý tưởng cá nhân để tập trung toàn lực vào việc giải quyết bài toán nhóm. Do không tham gia vẽ quy trình hiện tại (CP5), tôi đã phải đọc rất kỹ sơ đồ luồng công việc do các thành viên khác làm để có thể đưa ra quyết định can thiệp AI chính xác ở CP6.
+
+### 6.2. Tôi đã thay đổi quyết định gì sau khi nghe AI hoặc bạn học phản biện?
+Khi phụ trách CP6, ban đầu tôi định chọn mức độ can thiệp là "Agent" vì nghĩ rằng việc check lỗi định dạng và so sánh văn bản là khá đơn giản với AI hiện nay. Tuy nhiên, sau khi tranh luận với nhóm về rủi ro đạo đức và liêm chính học thuật (Academic Integrity), tôi nhận ra rằng AI không bao giờ được phép tự ý sinh văn bản sửa bài tập hộ sinh viên. Tôi đã thay đổi quyết định, hạ xuống mức Workflow nghiêm ngặt: AI chỉ sinh báo cáo lỗi (Audit Report), còn sinh viên phải tự tay sửa từng lỗi một. Điều này kéo theo việc tôi phải sửa lại Success Metric từ chỗ "giảm tối đa thời gian" sang "đảm bảo không bị trừ điểm format trong khi thời gian rà soát vẫn nằm trong tầm kiểm soát".
+
+### 6.3. Nếu làm lại, tôi sẽ thay đổi điều gì trong cách tiếp cận của mình?
+Nếu làm lại, tôi sẽ muốn nhóm có sự phối hợp chặt chẽ hơn giữa người làm CP5 (Quy trình) và tôi (người làm CP6 - Mức can thiệp). Vì không trực tiếp làm Problem Statement v0, tôi đã mất một lúc lúng túng khi phải đối chiếu sự thay đổi sang v1, đặc biệt là việc xác định chính xác "AI Intervention Point" nằm ở đâu giữa các luồng công việc thủ công. Lần tới, tôi sẽ chủ động yêu cầu người làm CP5 thảo luận chung với tôi trước khi họ chốt sơ đồ cuối cùng.
