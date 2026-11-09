@@ -140,16 +140,16 @@ HIỆN TẠI — 30–40 phút/lần
 
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
-| Pitch Problem Card | | |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
-| Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
-| Gom cluster / cây OST | | |
-| Chọn candidate problem | | |
-| Kiểm chứng / research | | |
-| Quy trình nhóm | | |
-| Problem Statement | | |
-| Mức can thiệp AI | | |
-| Quyết định | | |
+| Pitch Problem Card | Pitched 3 candidate cá nhân: so sánh gói vay VF5, phân loại review app, chẩn đoán lỗi ADAS; tập trung giải thích actor, bottleneck và impact rõ hàng | Đã giúp nhóm có nhiều ý có thể compare, và giúp nhóm chọn candidate về review repo/nộp bài vì phạm vi rõ hơn và dễ kiểm chứng |
+| Phản biện bài của bạn khác | Đặt câu hỏi về actor, bottleneck và cách đo metric ở các candidate của bạn khác; tập trung vào việc phân biệt giữa pain thật và solution đội lốt | Các câu hỏi giúp các bạn sửa lại card cho rõ hơn, đặc biệt là cần tách rõ quy trình và metric |
+| Nhận phản biện | Nhận câu hỏi: "Khách hàng có thực sự cần so sánh nhiều gói vay không?" và "30 phút/bài có phải là baseline hay chỉ là trải nghiệm cá nhân?" | Tôi đã sửa lại mô tả để ghi rõ actor, bottleneck và baseline không đánh đồng thành mọi trường hợp |
+| Gom cluster / cây OST | Đóng góp trong buổi gom cluster dựa trên các pattern: tìm và đối chiếu thông tin, xử lý text lớn, kiểm tra đầu ra | Giúp nhóm thấy các candidate có cùng cấu trúc và chọn đường đi đúng: review checklist/rubric thay vì AI tự sửa nội dung |
+| Chọn candidate problem | Tham gia đánh giá shortlist và chọn candidate cuối: review repo trước khi nộp bài | Candidate này phù hợp và dễ xây tiếp quy trình, boundary và mức can thiệp AI |
+| Kiểm chứng / research | Đọc lại báo cáo cá nhân, đối chiếu tài liệu nhóm và nghiên cứu giải pháp có sẵn như checklist, markdownlint, lychee | Giúp nhóm hiểu rõ rằng rule/script có thể giải nửa bài toán, và cần kiểm chứng bottleneck thực sự ở đâu |
+| Quy trình nhóm | Hỗ trợ lập quy trình hiện tại, phân tích bottleneck, và propose quy trình tương lai gắn với Rule + AI + người review | Làm rõ vị trí con người cần ở cuối cùng để kiểm soát chất lượng, không để AI tự động hóa quá xa |
+| Problem Statement | Tham gia viết v0: actor, quy trình, bottleneck, impact, metric và boundary | Đưa ra được khung problem rõ hơn, giúp nhóm chuyển từ “đã có công cụ” sang “đã có pain thật cần giải” |
+| Mức can thiệp AI | Thảo luận với nhóm về AI chỉ nên quét, báo lỗi, không tự sửa file và không tự nộp bài | Chốt được mức can thiệp ở Workflow và xác định rõ boundary để tránh solution-first |
+| Quyết định | Đóng góp ý kiến vào quyết định Go/Not Yet khi check lại mức rủi ro và bằng chứng | Nhóm giữ được quyết định có căn cứ, không vội chọn AI mạnh quá sớm |
 
 ---
 
@@ -157,12 +157,12 @@ HIỆN TẠI — 30–40 phút/lần
 
 | Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
 |---|---|---|---|---|
-| CP1 Scan | | | | |
-| CP2 Problem Card | | | | |
-| CP4 Research | | | | |
-| CP5 Quy trình | | | | |
-| CP5–6 Problem Statement | | | | |
-| CP6 Mức can thiệp / quyết định | | | | |
+| CP1 Scan | Gợi ý thêm ý tưởng theo các lăng kính, kiểm tra xem problem có quá giống solution hay chưa | Giúp mình mở thêm góc nhìn, nhìn lại các ý đang mơ hồ và sửa câu Job Story cho rõ hơn | AI dễ đề xuất một số ý quá rộng hoặc quá “AI” như build chatbot, agent làm luôn | Tôi giữ những ý có actor rõ và pain thật, bỏ các ý không có quy trình hoặc quá lớn |
+| CP2 Problem Card | Dùng AI phản biện card để kiểm tra actor, bottleneck, metric và phạm vi | Giúp tôi thấy chỗ chưa rõ, nhất là khi card viết dài hoặc thiếu số phút cụ thể | AI không đủ hiểu ngữ cảnh doanh nghiệp, và có thể gợi ý quá xa về agent / tự động hóa | Tôi chỉnh lại quy trình và metric theo thực tế, không để AI quyết định hướng đi cho mình |
+| CP4 Research |  |
+| CP5 Quy trình | Dùng AI để kiểm tra cách mô tả quy trình hiện tại/tương lai và xác định rõ Rule/AI/Con người | Giúp sắp xếp logic của quy trình, boundary rõ hơn và mô tả before/after dễ đọc hơn | AI có thể nhấn mạnh quá nhiều vào tool mà bỏ quên người dùng và bảo mật | Tôi giữ phrasing dựa trên operation flow thật, không để thành mô tả giải pháp kỹ thuật vô nghĩa |
+| CP5–6 Problem Statement |  |
+| CP6 Mức can thiệp / quyết định |  |
 
 ---
 
@@ -171,21 +171,34 @@ HIỆN TẠI — 30–40 phút/lần
 Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ cho các câu 6.1–6.6 (không tính 6.7, câu này được chấm riêng ở tiêu chí C5). **Không dùng AI để viết thay.**
 
 **6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
+Sau khi nghe top 3 problems của các bạn trong nhóm, mình thấy có một vài problem vẫn còn hơi mơ hồ, vĩ mô như phân loại hàng trăm feedback, tổng hợp báo cáo toàn công ty nhưng lại thiếu đi actor cụ thể hoặc là bottleneck không thể xác định được cụ thể chính xác là bao nhiêu. Ngoài ra vẫn có các problem rất hay và đầy đủ cụ thể
 
 **6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
+Có một problem bị solution first khi mà bạn đó nói rằng tạo ra con AI Agent tự đọc file rồi tự sửa file, tự commit lên github. Do đó nhóm đã kịp thời bàn lại và chỉ ra rằng nó quá nhiều rủi ro và thống nhất rằng AI chỉ nên tìm ra lỗi và không được tự sửa lỗi sửa code
 
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
+Có. Ban đầu, tôi khẳng định rằng bottleneck của quá trình review bài là "30 phút" cho toàn bộ các khâu. Nhưng khi trình bày, một bạn trong nhóm vặn lại: "30 phút đó là thời gian bạn tự dò, hay là bao gồm cả thời gian bạn nhắn tin bắt các thành viên khác vào sửa rồi ngồi chờ?". Tôi nhận ra mình đã đo sai. Sau phản biện đó, tôi đổi ý và chẻ nhỏ quy trình ra, xác định lại bottleneck thực sự chỉ là khâu "đọc nội dung bài làm và đối chiếu chéo với Rubric" chiếm khoảng 15 phút
 
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
-
+Tôi khá bất ngờ ở bước research các công cụ có sẵn (CP4). Ban đầu nhóm định dùng AI để giải quyết toàn bộ quy trình, nhưng khi research, tôi phát hiện ra các công cụ như Markdownlint hay Lychee đã có thể tự động bắt lỗi định dạng và tìm link chết rất nhanh bằng Rule/Script thông thường. Điều này làm tôi nhận ra không phải bài toán nào cũng cần nhét một con AI nặng nề vào.
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
+Khó nhất là viết phần "Success Metric" và giữ cho mô tả không dính dáng đến "Giải pháp"
 
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
+Nếu làm lại, tôi sẽ dành thêm thời gian thực hiện phỏng vấn 2-3 bạn ở các nhóm khác ngay tại CP4 thay vì chỉ dựa vào trải nghiệm tự báo cáo của bản thân. Tôi cũng sẽ phản biện nhóm mạnh hơn ở phần Boundary, yêu cầu định nghĩa rõ ràng xem nếu report của AI dài quá (cảnh báo những lỗi vụn vặt)
 
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
+Vấn đề (Problem) của nhóm là người review bài lab GitHub mất quá nhiều thời gian đối chiếu chéo giữa bài làm thực tế và các yêu cầu trong Rubric, dễ dẫn đến mệt mỏi và bỏ sót lỗi. Quy trình (Process) hiện tại tốn khoảng 30 phút, với điểm nghẽn (bottleneck) 15 phút nằm ở khâu đọc và map nội dung với tiêu chí chấm điểm. Để giải quyết, nhóm đặt mục tiêu (Metric) giảm tổng thời gian rà soát xuống dưới 15 phút và 0 lỗi cấu trúc. Chúng tôi đặt ra ranh giới (Boundary) nghiêm ngặt là AI chỉ được quét và báo lỗi, tuyệt đối không tự sửa file hay tự commit, con người bắt buộc phải kiểm tra lại (HITL). Vì vậy, mức can thiệp AI được chọn là Workflow (kết hợp Script kiểm tra link và AI so sánh Rubric)
 
 ---
 
 ## 7. Tài liệu tham khảo
+**Tài liệu môn học:**
+1. Hướng dẫn chi tiết từng checkpoint: `docs/01-worksheet.md`
+2. Báo cáo mẫu: `docs/02-deliverable-example.md`
+3. Tổng hợp Framework quốc tế: `docs/03-international-frameworks.md`
 
--
+**Các nguồn Research giải pháp hiện có (CP4):**
+11. GitHub Docs — *About tasklists*: https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/about-tasklists 
+12. Markdownlint (Ruby) Repository: https://github.com/markdownlint/markdownlint
+13. Lychee (Fast link checker) Repository: https://github.com/lycheeverse/lychee
